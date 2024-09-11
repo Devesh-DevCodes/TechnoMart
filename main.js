@@ -1,31 +1,9 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-import {
-  getAuth,
-  GoogleAuthProvider,
-  getRedirectResult,
-  signInWithPopup,
-  signOut,
-} from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyCFCBVB2keE9mH6T8Lz8EehkqSwSBcNCEE",
-  authDomain: "signin-test-51c74.firebaseapp.com",
-  projectId: "signin-test-51c74",
-  storageBucket: "signin-test-51c74.appspot.com",
-  messagingSenderId: "817569168873",
-  appId: "1:817569168873:web:2b1652a850e046fbd89f78",
-};
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
-const auth = getAuth(app);
-const provider = new GoogleAuthProvider(app);
 let login = document.getElementById("login");
 
 //  login.addEventListener("click", (e) => {
