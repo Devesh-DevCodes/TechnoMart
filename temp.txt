@@ -1,0 +1,1 @@
+  <button class="Buy" id="place-order" onclick="location.href='./Checkout/checkout.html'">Place Your Order</button>

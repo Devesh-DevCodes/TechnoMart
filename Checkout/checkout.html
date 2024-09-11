@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="icon" type="image/x-icon" href="../Images/fav-icon.ico" />
+    <link rel="stylesheet" href="./checkout.css" />
+
+    <title>Checkout</title>
+  </head>
+  <body>
+    <h1 class="main-h1">Place Your Order</h1>
+    <div class="checkout-main">
+        <div class="address-cont">
+          <h1>Enter Shipping Address</h1>
+          <!-- Address form -->
+          <!-- <div class="map"></div> -->
+          <div class="address-form">
+          <form action="" class="address_form_checkout">
+            <label for="name">Name : </label>
+            <br />
+            <input type="text" name="" id="name" />
+            <br />
+            <br>
+
+            <label for="name">Mobile Number : </label>
+            <br />
+            <input type="tel" name="" id="ph_no" />
+            <br />
+            <br />
+
+            <label for="pincode">Pincode : </label>
+            <br />
+            <input type="text" name="" id="pincode" maxlength="6" />
+            <br />
+            <br />
+
+            <label for="locality">Locality : </label>
+            <br />
+            <input type="text" name="" id="locality" />
+            <br />
+            <br />
+
+            <label for="address">Address : </label>
+            <br />
+            <textarea name="" id="address" cols="30" rows="5"></textarea>
+            <br />
+            <br />
+
+            <label for="landmark">Landmark : </label>
+            <br />
+            <input type="text" name="" id="landmark" />
+            <br />
+            <br />
+
+            <label for="district">District : </label>
+            <br />
+            <input type="text" name="" id="district" />
+            <br />
+            <br />
+
+            <label for="state">Select State : </label>
+            <br />
+            <select name="" id="state">
+              <option value="Select State">Select State</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+            </select>
+            <br>
+            <br>
+
+            <button type="button" id="btn-save-address">Save</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Payment method -->
+      <div class="payment-box">
+        
+            <h1>Enter Payment Details </h1>
+            <div class="payment-details">
+                <p>Payment Methods</p>
+
+                <form action="">
+                  <input type="radio" name="payment-method" id="upi">
+                  <label for=""> UPI</label>
+                  <br>
+                  <br>
+                  <input type="radio" name="payment-method" id="wallets">
+                  <label for="wallets"> Wallets</label>
+                  <br>
+                  <br>
+                  <input type="radio" name="payment-method" id="cards">
+                  <label for="cards"> Credit / Debit / ATM Cards</label>
+                  <br>
+                  <br>
+                  <input type="radio" name="payment-method" id="net-banking">
+                  <label for="net-banking"> Net Banking</label>
+                  <br>
+                  <br>
+                  <button type="button" class="payment-process-btn">Continue</button>
+
+                </form>
+            </div>
+
+      </div>
+    </div>
+
+    <script src="./checkout.js"></script>
+  </body>
+</html>
