@@ -1,0 +1,61 @@
+.register-form-box{
+    grid-area: cont;
+}
+.register-form{
+    box-sizing: border-box;
+    display: grid;
+    font-size: 19px;
+    margin: 3%;
+    gap: 1rem;
+    height: 50rem;
+    width: 40rem;
+    /* border: 1px solid white; */
+    box-shadow: 1px 1px 6px 1px gray;
+    
+    background-color: #0b0b0b;
+    background-color: #0b0b0bc7;
+    border-radius: 2rem;
+    justify-items: center;
+    align-content: space-between;
+    color: white;
+
+
+}
+.heading-r{
+    color: aqua;
+}
+input,textarea{
+    font-size: 1rem;
+    width: 15rem;
+}
+.address-cont,.box-cont{
+    display: flex;
+    align-items: center;
+}
+.label,.unknown {
+    display: inline-block;
+    width: 15rem;
+}
+.unknown div{
+    display: flex;
+    & label{
+        width: 5rem;
+    }
+}
+
+
+/* .btn-contact-submit{
+    align-items: center;
+    width: fit-content;
+} */
+
+@media (max-width:320px) {
+    html{
+        font-size: 70%;
+
+    }
+    .contact-img{
+        width: 30rem;
+    }
+    
+}

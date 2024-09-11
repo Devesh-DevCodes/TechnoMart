@@ -1,0 +1,61 @@
+body {
+  background-color: #000000;
+  color: white;
+}
+.main-h1 {
+  text-align: center;
+}
+.checkout-main {
+  /* display: grid;
+  grid-template-columns: repeat(2,auto); */
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.address-form {
+  box-sizing: border-box;
+  border-radius: 3%;
+  height: fit-content;
+  width: 30rem;
+  
+  padding: 2rem 4rem;
+  border: 1px solid;
+  
+  font-size: 1rem;
+  
+  & input,
+  select {
+    width: 20rem;
+    height: 1.5rem;
+  }
+  & textarea {
+    width: 20rem;
+  }
+}
+#btn-save-address , .payment-process-btn {
+  cursor: pointer;
+  /* height: 2rem; */
+  width: fit-content;
+  border-radius: 1.3rem;
+  font-size: 1.2rem;
+  padding: .6rem;
+  /* font-weight: 500; */
+  
+}
+#btn-save-address:hover , .payment-process-btn:hover  {
+  background-color: #b3b1b1;
+  color: #ffffff;
+}
+
+.payment-details {
+  box-sizing: border-box;
+  padding: 2rem;
+  min-height: 32rem;
+  width: 30rem;
+  border: 1px solid;
+  border-radius: 3%;
+  font-size: 1rem;
+}
