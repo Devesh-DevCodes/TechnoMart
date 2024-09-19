@@ -229,10 +229,14 @@ body {
   color: #03423e;
   text-align: center;
 }
+.top-header{
+  font-size: 32px;
+}
 .top-heading{
   color: #080330;
   /* font-weight: bolder; */
   font-family: cursive;
+
 }
 .top-content {
   font-size: 20px;
