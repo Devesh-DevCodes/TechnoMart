@@ -38,6 +38,11 @@ html{
 input,textarea{
     font-size: 1rem;
     width: 15rem;
+    outline: none;
+    border-radius: 5px;
+}
+input:focus,textarea:focus{
+    border: 2px solid #933fd8;
 }
 .message-container{
     display: flex;
@@ -48,10 +53,25 @@ label{
     width: 10rem;
 }
 
-/* .btn-contact-submit{
-    align-items: center;
-    width: fit-content;
-} */
+.h-captcha{
+    margin: auto;
+}
+
+.btn-contact-submit{
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background: linear-gradient(50deg , #86d7ed , #6464f1);
+    cursor: pointer;
+    /* padding: 5px 10px; */
+    
+}
+.btn-contact-submit:hover{
+    background: linear-gradient(50deg , #6464f1 , #86d7ed );
+
+}
 
 @media (max-width:320px) {
     html{
@@ -62,4 +82,61 @@ label{
         width: 30rem;
     }
     
+}
+
+
+/* success page  */
+
+.s-body{
+   
+    height: 900px;
+    display: flex;
+    background-color: #000000;
+    color: aliceblue;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    /* margin: auto; */
+}
+.success-main{
+    height: 400px;
+    width: 500px;
+    border: 2px solid #2be2d3;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(200deg ,  black, grey );
+
+    & .icon{
+        font-size: 100px;
+        color: #2be2d3;
+    }
+
+}
+.s-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & .s-heading{
+        color: #2be2d3;
+
+    }
+
+
+    & button{
+        height: 40px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: #bbedf6;
+        border-radius: 15px;
+        border: 2px solid #4875df;
+    }
+    & button:hover{
+        background-color: #92edf7;
+    }
 }

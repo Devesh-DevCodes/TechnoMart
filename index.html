@@ -35,25 +35,54 @@
 </head>
 
 <body class="container-main">
+    <!------------------- Nav Bar----------------- -->
+    <div class="nav" id="nav_home">
+      <a href="./index.html" class="logo-1"
+        ><img class="logo" src="./Images/Logo-techno.jpg" alt="TechnoMart Logo"></a>
+      <a href="./index.html" class="logo-2"
+        ><img class="logo" src="./Images/fav-icon.ico" alt="Logo"
+      /></a>
+
+      <div class="input">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="search" type="search" placeholder="Search" />
+      </div>
+      <ul class="nav-content">
+        <a href="../index.html" class="my-nav-link">Home</a>
+        <a href="./about/about.html" class="my-nav-link">Category</a>
+        <a href="./Products/product_pg.html" class="my-nav-link"> Catalogue </a>
+        <a href="./Contact/contact.html" class="my-nav-link">Contact Us</a>
+      </ul>
+      <a href="./Cart/cart.html" class="btn_cart cart btn-cart" id="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart_number"></span>
+      </a>
+      <div id="userProfile" style="display: none;" onclick="window.location.href='../login/login.html'"></div> <!-- Profile info will be displayed here -->
+  
+      <button id="main-login-btn" class="btn btn-login" onclick="window.location.href='../login/login.html'">Login</button> <!-- Main login button -->
+      <div class="hamburger"><i class="bi bi-list"></i></div>
+      <!-- <script src="./nav_script.js"></script> -->
+    </div>
+
   <!------------------- Nav Bar----------------- -->
   <!-- <div class="nav-logo"> -->
-  <a href="./index.html" class="nav-logo logo-1">
+  <a href="./index.html" class="nav-logo logo-1" style="display: none;">
     <img class="logo" src="./Images/Logo-techno.jpg" alt="TechnoMart Logo">
   </a>
   <!-- </div> -->
-  <div class="nav-1">
+  <div class="nav-1" style="display: none;">
     <a href="../index.html">
       <h2 class="top-header">Welcome To TechnoMart</h2>
     </a>
   </div>
 
-  <div class="nav-2">
-    <a href="../index.html" class="nav-link">Home</a>
-    <a href="./login/login.html" class="nav-link">Login</a>
-    <a href="./Registration/register.html" class="nav-link">Registration</a>
+  <div class="nav-2" style="display: none;">
+    <a href="../index.html" class="my-nav-link">Home</a>
+    <a href="./login/login.html" class="my-nav-link">Login</a>
+    <a href="./Registration/register.html" class="my-nav-link">Registration</a>
 
-    <!-- <button class="btn btn-login login_btn" ></button> -->
-    <a href="./Products/product_pg.html" class="nav-link"> Catalogue </a>
+    <!-- <button class="btn btn-login login_btn"> Login </button> -->
+    <a href="./Products/product_pg.html" class="my-nav-link"> Catalogue </a>
 
     <a href="./Cart/cart.html" class="btn_cart cart btn-cart" id="cart">
       <!-- <span>Cart</span> -->
@@ -64,7 +93,7 @@
   </div>
 
   <!--  Side Bar -->
-  <div class="side-bar">
+  <div class="side-bar" style="display: none;">
     <a href="./Products/product_pg.html" class="side-tabs" id="cse">Computers</a>
     <a href="./Products/product_pg.html" class="side-tabs" id="ece">Laptops</a>
     <a href="./Products/product_pg.html" class="side-tabs" id="eee">SmartPhones</a>
@@ -158,22 +187,28 @@
   <!----------------- footer ---------------->
   <footer class="footer">
     <!-- <hr /> -->
-    <span> Copyright &copy; 2023 | Devesh | @DevCodes </span>
+    <span> Copyright &copy; 2023 | Devesh | @TechnoMart </span>
     <span id="foot-span">|</span> <span> All Rights Reserved</span>
     <!-- <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
-    <a href="https://www.linkedin.com/in/devesh-devcodes543/" target="_blank"
+    <a href="https://www.linkedin.com/in/devesh-devcodes/" target="_blank"
       aria-label="Visit Devesh's LinkedIn profile">
       <i class="bi bi-linkedin"></i>
     </a>
 
-    <a href="https://github.com/devcodes543" target="_blank"><i class="bi bi-github"></i></i> </a>
-    <a href="mailto:deveshlucky202@gmail.com" target="_blank"><i class="bi bi-envelope"></i> </a>
+    <a href="https://github.com/devesh-devcodes" target="_blank"><i class="bi bi-github"></i></i> </a>
+    <a href="mailto:technomart.24x7@gmail.com" target="_blank"><i class="bi bi-envelope"></i> </a>
     <!-- <a href=""><i class="fa-solid fa-envelope"></i> </a> -->
   </footer>
 
-  <script src="./login/login_script.js"></script>
   <script src="./data.js"></script>
   <script src="./Products/product_pg.js"></script>
+  
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js" type="module"></script>
+
+<script src="./firebase_init.js" type="module"></script>
+<script src="./navbar_script.js" type="module"></script>
+
 
 </body>
 

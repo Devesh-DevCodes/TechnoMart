@@ -18,7 +18,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="icon" type="image/x-icon" href="../Images/fav-icon.ico" />
+    <link rel="icon" type="image/x-icon" href="./Images/fav-icon-techno.ico" />
     <link rel="stylesheet" href="../style.css" />
     <!-- <link rel="stylesheet" href="./login.css" /> -->
 
@@ -26,40 +26,40 @@
   </head>
 
   <body class="container-main">
-    <!------------------- Nav Bar----------------- -->
-    <!-- <div class="nav-logo"> -->
-    <a href="../index.html" class="nav-logo logo-1">
-      <img class="logo" src="../Images/Logo.jpg" alt="Logo" />
-    </a>
-    <!-- </div> -->
-    <div class="nav-1">
-      <a href="../index.html">
-        <h1>Welcome To EduSphere</h1>
-      </a>
-    </div>
+      <!------------------- Nav Bar----------------- -->
+      <div class="nav" id="nav_home">
+        <a href="../index.html" class="logo-1"
+          ><img class="logo" src="../Images/Logo-techno.jpg" alt="TechnoMart Logo"></a>
+        <a href="./index.html" class="logo-2"
+          ><img class="logo" src="./Images/fav-icon.ico" alt="Logo"
+        /></a>
+  
+        <div class="input">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input class="search" type="search" placeholder="Search" />
+        </div>
+        <ul class="nav-content">
+          <a href="../index.html" class="my-nav-link">Home</a>
+          <a href="../about/about.html" class="my-nav-link">Category</a>
+          
+          <a href="../Products/product_pg.html" class="my-nav-link"> Catalogue </a>
+          <a href="../Contact/contact.html" class="my-nav-link">Contact Us</a>
+        </ul>
+        <a href="../Cart/cart.html" class="btn_cart cart btn-cart" id="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart_number"></span>
+        </a>
 
-    <div class="nav-2">
-      <a href="../index.html" class="nav-link">Home</a>
-      <a href="./login.html" class="nav-link">Login</a>
-      <a href="../Registration/register.html" class="nav-link">Registration</a>
+        <div id="userProfile" style="display: none;" onclick="window.location.href='./login.html'"></div>
+        <!-- Main Login Button -->
+        <button id="main-login-btn" class="btn btn-login" style="display: none;" onclick="window.location.href='./login.html'">Login</button>
 
-      <!-- <button class="btn btn-login login_btn" ></button> -->
-      <a href="../Products/product_pg.html" class="nav-link"> Catalogue </a>
-
-      <!-- <a href="#">About</a> -->
-
-      <!-- <a href="./Contact/contact.html">Contact</a> -->
-
-      <a href="../Cart/cart.html" class="btn_cart cart btn-cart" id="cart">
-        <!-- <span>Cart</span> -->
-        <i class="fa-solid fa-cart-shopping"></i>
-        <span id="cart_number"></span>
-      </a>
-    </div>
-    <!-- <div class="hamburger"><i class="bi bi-list"></i></div> -->
+        <div class="hamburger"><i class="bi bi-list"></i></div>
+        <!-- <script src="./nav_script.js"></script> -->
+      </div>
 
     <!--     side bar      -->
-    <div class="side-bar">
+    <div class="side-bar" style="display: none;">
       <a href="../Products/product_pg.html" class="side-tabs" id="cse">CSE</a>
       <a href="../Products/product_pg.html" class="side-tabs" id="ece">ECE</a>
       <a href="../Products/product_pg.html" class="side-tabs" id="eee">EEE</a>
@@ -72,7 +72,7 @@
     <!-- <div class="login_pop"> -->
     <div id="login_page">
       
-      <form class="form" id="login-form" action="#">
+      <form class="form" id="login-form" >
         <br>
         <br>
         <h1 class="heading">Login Page </h1>
@@ -80,14 +80,14 @@
         <br>
 
         <div>
-          <label for="name">Username : </label>
+          <label class="login-label" for="email">Email : </label>
           <input
-            type="text"
-            name="name"
-            id="name"
+            type="email"
+            name="email"
+            id="email"
             class="input-form"
-            placeholder="Name"
-            required
+            placeholder="abc@xyz.com"
+            
             
           />
         </div>
@@ -95,14 +95,14 @@
         <br />
 
         <div>
-          <label for="pwd">Password : </label>
+          <label class="login-label" for="pwd">Password : </label>
           <input
             type="password"
             name="pwd"
             class="input-form"
             id="pwd"
             placeholder="Enter Password"
-            required
+            
           />
           <br>
             <span id="pwdError" style="color: red;"></span>
@@ -123,12 +123,14 @@
           >
             Submit
           </button>
-
-          <button id="btn-reset" type="reset" class="btn-login">
-            Reset
-          </button>
         </div>
+        <div class="other"> Or</div>
+
       </form>
+      <button class=" btn btn-login login_btn  login-btn-google" id="login-btn-google" style="display: none;">LogIn with Google</button>
+      <div id="userDetails" style="display: none;"></div>
+      <!-- <button id="googleSignInBtn">Sign in with Google</button> -->
+      <button class="btn btn-login login_btn logout-btn-google" id="logout-btn-google" style="display: none;">LogOut</button>
     </div>
     
 
@@ -145,7 +147,13 @@
       <!-- <a href=""><i class="fa-solid fa-envelope"></i> </a> -->
     </footer>
    
-    <script src="./login_script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js" type="module"></script>
+
+    <script src="/firebase_init.js" type="module"></script>
+    <script src="./login_script.js" type="module"></script>
+    <script src="/navbar_script.js" type="module"></script>
+
     <script src="../data.js"></script>
     <script src="../Products/product_pg.js"></script>
   </body>

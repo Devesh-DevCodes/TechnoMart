@@ -22,80 +22,116 @@
 
         <!------------------- Nav Bar----------------- -->
         <div class="nav" id="nav_contact">
-          <a href="../index.html"><img class="logo" src="../Images/Logo.jpg" alt="Logo" /></a>
-    
-          <ul class="content">
-            <li class="input">
+          
+            <a href="./index.html" class="logo-1"
+              ><img class="logo" src="../Images/Logo-techno.jpg" alt="TechnoMart Logo"></a>
+            <a href="./index.html" class="logo-2"
+              ><img class="logo" src="./Images/fav-icon.ico" alt="Logo"
+            /></a>
+      
+            <div class="input">
               <i class="fa fa-search" aria-hidden="true"></i>
-              <input class="search" type="text" placeholder="Search" />
-            </li>
-            <a href="../index.html"><li class="">Home</li></a>
-            <a href="../Products/product_pg.html"><li class="">Products</li></a>
-            <a href="#"><li class="">About</li></a>
-            <a href="./contact.html"><li class="">Contact</li></a>
-          </ul>
-          <a href="../Cart/cart.html" class="btn_cart cart btn-cart" id="cart">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span id="cart_number"></span>
-          </a>
-          <button class="btn login_btn" onclick="login()">Login</button>
-          <!-- <script src="../nav_script.js"></script> -->
+              <input class="search" type="search" placeholder="Search" />
+            </div>
+            <ul class="nav-content">
+              <a href="../index.html" class="my-nav-link">Home</a>
+              <a href="../about/about.html" class="my-nav-link">Category</a>
+              <a href="../Products/product_pg.html" class="my-nav-link"> Catalogue </a>
+              <a href="./contact.html" class="my-nav-link">Contact Us</a>
+            </ul>
+            <a href="./Cart/cart.html" class="btn_cart cart btn-cart" id="cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span id="cart_number"></span>
+            </a>
+            <button class="btn btn-login login_btn" onclick="login()">Login</button>
+            <div class="hamburger"><i class="bi bi-list"></i></div>
+            <!-- <script src="./nav_script.js"></script> -->
         </div>
 
-    <div class="contact-main">
-      <div class="contact-details">
-        <h2>Contact Us</h2>
-        <p>
-          For any queries, Please reach out to us. Our Support team will get
-          back to you within 24 hours.
-        </p>
-        <div class="c-mail">
-          <i class="fa-regular fa-envelope"> </i><span> abcd@xyx.com</span>
+        <div class="contact-main">
+          <div class="contact-details">
+            <h2>Contact Us</h2>
+            <p>
+              For any queries, Please reach out to us. Our Support team will get
+              back to you within 24 hours.
+            </p>
+            <div class="c-mail">
+              <i class="fa-regular fa-envelope"> </i><span> technomart.24x7@gmail.com</span>
+            </div>
+            <div class="c-phone">
+              <i class="fa-solid fa-phone"></i><span> +91 6386151165</span>
+            </div>
+            <img src="../Images/contact-img.svg" class="contact-img" alt="">
+          </div>
+          <div class="contact-form-box" id="contact-form">
+            <form  action="https://api.web3forms.com/submit" method="POST"   class="contact-form" >
+              <input type="hidden" name="access_key" value="83136e56-b75d-46dc-a775-1c833179cd3a">
+              <input type="hidden" name="from_name" value="TechnoMart-24x7.vercel.app">
+              
+              <div>
+                <label for="name">Enter Name : </label>
+                <input type="text" name="name" id="name" placeholder="Name"  required/>
+              </div>
+              <div>
+                <label for="phone">Ph. Number : </label>
+                <!-- <span>+91</span> -->
+                <!-- <input
+                  type="tel"
+                  id="number-front"
+                  value="+91"
+                  
+                /> -->
+                <input type="tel" name="phone" id="phone" placeholder="9876543210" >
+              </div>
+              <div>
+                <label for="email">E-mail : </label>
+                <input type="email" name="email" id="email" placeholder="abc123@xyz.com"  required/>
+              </div>
+              <div>
+                <label for="subject">Subject : </label>
+                <input type="text" name="subject" id="subject" placeholder="Subject"  />
+              </div>
+              <div class="message-container">
+                <label for="message">Enter Message : </label>
+                <textarea
+                  name="message"
+                  class="message"
+                  id="message"
+                  cols="20"
+                  rows="7" required
+                ></textarea>
+              </div>
+              <div>
+                <label for="file">Document : </label>
+                <input type="file" name="file" id="file">
+                <!-- <input type="text" name="subject" id="subject" placeholder="Subject"  required/> -->
+              </div>
+    
+              <input type="hidden" name="redirect" value="https://techno-mart.netlify.app/Contact/success.html">
+              <div class="h-captcha" data-captcha="true"></div>
+              <button id="btn-contact-submit" type="submit" class="btn-contact-submit" >Submit</button>
+            </form>
+          </div>
         </div>
-        <div class="c-phone">
-          <i class="fa-solid fa-phone"></i><span> +91 9876543210</span>
-        </div>
-        <img src="../Images/contact-img.svg" class="contact-img" alt="">
-      </div>
-      <div class="contact-form-box" id="contact-form">
-        <form  onsubmit="validate()"  class="contact-form">
-          <div>
-            <label for="name">Enter Name : </label>
-            <input type="text" name="name" id="name" placeholder="Name" />
-          </div>
-          <div>
-            <label for="phone">Ph. Number : </label>
-            <!-- <span>+91</span> -->
-            <!-- <input
-              type="text"
-              id="number-front"
-              value="+91"
-              readonly="readonly"
-            /> -->
-            <input type="tel" name="phone" id="phone" placeholder="9876543210">
-          </div>
-          <div>
-            <label for="email">E-mail : </label>
-            <input type="email" name="mail" id="email" placeholder="abc123@xyz.com" />
-          </div>
-          <div>
-            <label for="subject">Subject : </label>
-            <input type="text" name="subject" id="subject" placeholder="Subject" />
-          </div>
-          <div class="message-container">
-            <label for="message">Enter Message : </label>
-            <textarea
-              name="message"
-              class="message"
-              id="message"
-              cols="20"
-              rows="7"
-            ></textarea>
-          </div>
-          <button id="btn-contact-submit" type="button" class="btn-contact-submit" onclick="validate()" >Submit</button>
-        </form>
-      </div>
-    </div>
-    <script src="./contact.js"></script>
+        <script src="./contact.js"></script>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+        
+        
+  <!----------------- footer ---------------->
+  <footer class="footer">
+    <!-- <hr /> -->
+    <span> Copyright &copy; 2023 | Devesh | @TechnoMart </span>
+    <span id="foot-span">|</span> <span> All Rights Reserved</span>
+    <!-- <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
+    <a href="https://www.linkedin.com/in/devesh-devcodes/" target="_blank"
+      aria-label="Visit Devesh's LinkedIn profile">
+      <i class="bi bi-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/devesh-devcodes" target="_blank"><i class="bi bi-github"></i></i> </a>
+    <a href="mailto:technomart.24x7@gmail.com" target="_blank"><i class="bi bi-envelope"></i> </a>
+    <!-- <a href=""><i class="fa-solid fa-envelope"></i> </a> -->
+  </footer>
+
   </body>
 </html>

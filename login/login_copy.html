@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- bootstrap -->
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" type="image/x-icon" href="./Images/fav-icon-techno.ico" />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- <link rel="stylesheet" href="./login.css" /> -->
+
+    <title>Login | Sign in</title>
+  </head>
+
+  <body class="container-main">
+      <!------------------- Nav Bar----------------- -->
+      <div class="nav" id="nav_home">
+        <a href="../index.html" class="logo-1">
+          <img class="logo" src="../Images/Logo-techno.jpg" alt="TechnoMart Logo" />
+        </a>
+        <a href="./index.html" class="logo-2">
+          <img class="logo" src="./Images/fav-icon.ico" alt="Logo" />
+        </a>
+      
+        <div class="input">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input class="search" type="search" placeholder="Search" />
+        </div>
+        <ul class="nav-content">
+          <a href="../index.html" class="my-nav-link">Home</a>
+      
+          <!-- Dropdown for Categories -->
+          <li class="nav-item dropdown">
+            <a class="my-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../Products/product_pg.html?category=cse">CSE</a></li>
+                <li><a class="dropdown-item" href="../Products/product_pg.html?category=ece">ECE</a></li>
+                <li><a class="dropdown-item" href="../Products/product_pg.html?category=eee">EEE</a></li>
+                <li><a class="dropdown-item" href="../Products/product_pg.html?category=civil">CIVIL</a></li>
+            </ul>
+        </li>
+      
+          <a href="../Products/product_pg.html" class="my-nav-link">Catalogue</a>
+          <a href="../Contact/contact.html" class="my-nav-link">Contact Us</a>
+        </ul>
+        <a href="../Cart/cart.html" class="btn_cart cart btn-cart" id="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart_number"></span>
+        </a>
+        
+        <button class="btn btn-login login_btn" onclick="login()">Login</button>
+        <div class="hamburger"><i class="bi bi-list"></i></div>
+      </div>
+      
+
+    <!--     side bar      -->
+    <div class="side-bar" style="display: none;">
+      <a href="../Products/product_pg.html" class="side-tabs" id="cse">CSE</a>
+      <a href="../Products/product_pg.html" class="side-tabs" id="ece">ECE</a>
+      <a href="../Products/product_pg.html" class="side-tabs" id="eee">EEE</a>
+      <a href="../Products/product_pg.html" class="side-tabs" id="civil">CIVIL</a>
+    </div>
+
+    <!-- Main Content -->
+
+    <!----------------------- Login _ Page------------------- -->
+    <!-- <div class="login_pop"> -->
+    <div id="login_page">
+      
+      <form class="form" id="login-form" >
+        <br>
+        <br>
+        <h1 class="heading">Login Page </h1>
+        <br>
+        <br>
+
+        <div>
+          <label class="login-label" for="email">Email : </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input-form"
+            placeholder="abc@xyz.com"
+            
+            
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <label class="login-label" for="pwd">Password : </label>
+          <input
+            type="password"
+            name="pwd"
+            class="input-form"
+            id="pwd"
+            placeholder="Enter Password"
+            
+          />
+          <br>
+            <span id="pwdError" style="color: red;"></span>
+            <br>
+            
+
+        
+        </div>
+
+        <br />
+
+        <div class="btn-login-form">
+          <button
+            id="btn-submit"
+            type="submit"
+            class="btn-login"
+            onclick="validate()"
+          >
+            Submit
+          </button>
+        </div>
+        <div class="other"> Or</div>
+
+        <button class="login-btn-google">LogIn with Google</button>
+        <button class="logout-btn-google" style="display: none;">LogOut</button>
+      </form>
+    </div>
+    
+
+
+    <!----------------- footer ---------------->
+    <footer class="footer">
+      <!-- <hr /> -->
+      <span> Copyright &copy; 2023 | Devesh | @DevCodes </span>
+      <span id="foot-span">|</span> <span> All Rights Reserved</span>
+      <!-- <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
+      <a href="https://www.linkedin.com/in/devcodes/" target="_blank"><i class="bi bi-linkedin"></i> </a>
+      <a href="https://github.com/devcodes543" target="_blank"><i class="bi bi-github"></i></i> </a>
+      <a href="mailto:deveshlucky202@gmail.com" target="_blank"><i class="bi bi-envelope"></i> </a>
+      <!-- <a href=""><i class="fa-solid fa-envelope"></i> </a> -->
+    </footer>
+   
+    <script src="./login_script.js"></script>
+    <script src="../data.js"></script>
+    <script src="../Products/product_pg.js"></script>
+    <!-- Include jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+  </body>
+</html>
