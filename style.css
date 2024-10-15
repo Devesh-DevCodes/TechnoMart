@@ -125,6 +125,7 @@ body {
   background-color: #fff;
   color: #eceaec;
   background-color: #1a0b1d;
+  cursor: pointer;
 }
 .input {
   font-size: 18px;
@@ -144,14 +145,14 @@ body {
 /* user profile in nav  */
 #userDetails, #userProfile{
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   & img{
 
     height: 60px;
     width: 60px;
-    margin-top: -9px;
-    border: 2px solid;
+    
+    border: 2px solid #710e83;
     border-radius: 100%;
     cursor: pointer;
   }

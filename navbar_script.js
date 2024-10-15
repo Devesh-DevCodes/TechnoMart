@@ -1,6 +1,8 @@
+// navbar_script.js
 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { app } from './firebase_init.js'; // Import the app from firebase_init.js
 
-const auth = getAuth();
+const auth = getAuth(app); // Pass the app instance to getAuth()
 
 function updateUserProfile() {
   const userProfileDiv = document.getElementById('userProfile');
