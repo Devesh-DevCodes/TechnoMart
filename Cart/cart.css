@@ -1,42 +1,49 @@
 /* ------------------- Cart Page --------------------- */
 .shopping_cart {
+
   /* display: grid; */
   
-  background-color: #0b0b0bc7; 
+  background-color: #0b0b0bac; 
   margin: 2%;
   padding: 50px;
   grid-area: cont;
 }
-
-.shopping_cart .cart_heading {
+#cart_heading {
   display: grid;
   grid-template-columns: repeat(6, auto);
   font-size: 25px;
+  
+  /* background-color: #2b2a2ad2; */
+  /* box-shadow: 1px 1px 8px 1px gray; */
+  border-radius: 20px;
+  padding: 10px;
 }
+
 .cart_content{
-  background-color: #0b0b0bc7;
-  background-color: #3f3e3ea2;
+  /* background-color: #0b0b0bc7; */
+  /* background-color: #2b2a2ad2; */
   box-shadow: 1px 1px 8px 1px gray;
-  width: fit-content;
+  border-radius: 20px;
+  width: auto;
 
   padding:3% 0;
 
 }
 .top_label {
   grid-area: cont;
-  margin: 8%;
-  margin-right: 28%;
+  margin: auto ;
+  margin-top: 5%;
   text-align: center;
   font-size: 50px;
-  background-color: #03030380;
+  background-color: #03030376;
   box-shadow: 1px 1px 6px 1px gray;
   border-radius: 20px;
-  padding: 0 0 7%;
+  padding:7%;
 }
 
 .cart_content .cart_item {
   /* display: flex; */
-  height: 120px;
+  height: auto;
 
   display: grid;
   grid-template-columns: repeat(6, auto);
@@ -56,8 +63,18 @@
   border-radius: 5px;
 }
 .t_amount,.price{
+  
   font-size: 18px;
 }
+/* .amount{
+  color: #021f1f;
+  background-color: #2b2a2ad2;
+  box-shadow: 1px 1px 8px 1px gray;
+  width: auto;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 25px;
+} */
 .shopping_cart .btn-inc-dec {
   display: flex;
 }
@@ -66,7 +83,7 @@
 .btn-dec,
 .item-qty {
   border: 1px solid;
-  border-radius: 2px;
+  border-radius: 3px;
   min-width: 25px;
   color: #a3f1f1;
   text-align: center;
@@ -93,12 +110,13 @@
   border-color: #a3f1f1;
   color: #00fff2e5;
   font-size: 20px;
-  
+  transition: 0.5s;
   padding: 10px;
   border-radius: 30px;
 }
 .btn-remove{
   height: 35px;
+
   /* font-size: 18px; */
   /* font-weight: 600; */
   
@@ -122,4 +140,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+#cart_content {
+  display: block; /* Ensure it's visible */
 }

@@ -18,7 +18,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="icon" type="image/x-icon" href="./Images/fav-icon-techno.ico" />
+    <link rel="icon" type="image/x-icon" href="../Images/fav-icon-techno.ico" />
     <link rel="stylesheet" href="../style.css" />
     <!-- <link rel="stylesheet" href="./login.css" /> -->
 
@@ -31,7 +31,7 @@
         <a href="../index.html" class="logo-1"
           ><img class="logo" src="../Images/Logo-techno.jpg" alt="TechnoMart Logo"></a>
         <a href="./index.html" class="logo-2"
-          ><img class="logo" src="./Images/fav-icon.ico" alt="Logo"
+          ><img class="logo" src="../Images/fav-icon-techno.ico" alt="Logo"
         /></a>
   
         <div class="input">
@@ -58,21 +58,13 @@
         <!-- <script src="./nav_script.js"></script> -->
       </div>
 
-    <!--     side bar      -->
-    <div class="side-bar" style="display: none;">
-      <a href="../Products/product_pg.html" class="side-tabs" id="cse">CSE</a>
-      <a href="../Products/product_pg.html" class="side-tabs" id="ece">ECE</a>
-      <a href="../Products/product_pg.html" class="side-tabs" id="eee">EEE</a>
-      <a href="../Products/product_pg.html" class="side-tabs" id="civil">CIVIL</a>
-    </div>
-
     <!-- Main Content -->
 
     <!----------------------- Login _ Page------------------- -->
     <!-- <div class="login_pop"> -->
     <div id="login_page">
       
-      <form class="form" id="login-form" >
+      <form class="form" id="login-form" style="display: none;" >
         <br>
         <br>
         <h1 class="heading">Login Page </h1>
@@ -80,7 +72,7 @@
         <br>
 
         <div>
-          <label class="login-label" for="email">Email : </label>
+          <label class="login-label" for="email">Username : </label>
           <input
             type="email"
             name="email"
@@ -124,13 +116,19 @@
             Submit
           </button>
         </div>
-        <div class="other"> Or</div>
+        <br>
+        <div class="other" > or </div>
 
       </form>
-      <button class=" btn btn-login login_btn  login-btn-google" id="login-btn-google" style="display: none;">LogIn with Google</button>
+
+      <button class="login-btn-google"  id="login-btn-google" style="display: none;">
+        <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google Logo" />
+        <span>Sign in with Google</span>
+    </button>
+    <div class="user-box">
       <div id="userDetails" style="display: none;"></div>
-      <!-- <button id="googleSignInBtn">Sign in with Google</button> -->
-      <button class="btn btn-login login_btn logout-btn-google" id="logout-btn-google" style="display: none;">LogOut</button>
+    </div>
+      <button class=" btn-login login_btn logout-btn-google" id="logout-btn-google" style="display: none;">LogOut</button>
     </div>
     
 
@@ -138,23 +136,28 @@
     <!----------------- footer ---------------->
     <footer class="footer">
       <!-- <hr /> -->
-      <span> Copyright &copy; 2023 | Devesh | @DevCodes </span>
+      <span> Copyright &copy; 2024 | Devesh | @TechnoMart </span>
       <span id="foot-span">|</span> <span> All Rights Reserved</span>
       <!-- <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
-      <a href="https://www.linkedin.com/in/devcodes/" target="_blank"><i class="bi bi-linkedin"></i> </a>
-      <a href="https://github.com/devcodes543" target="_blank"><i class="bi bi-github"></i></i> </a>
-      <a href="mailto:deveshlucky202@gmail.com" target="_blank"><i class="bi bi-envelope"></i> </a>
+      <a href="https://www.linkedin.com/in/devesh-devcodes/" target="_blank"
+        aria-label="Visit Devesh's LinkedIn profile">
+        <i class="bi bi-linkedin"></i>
+      </a>
+  
+      <a href="https://github.com/devesh-devcodes" target="_blank"><i class="bi bi-github"></i></i> </a>
+      <a href="mailto:technomart.24x7@gmail.com" target="_blank"><i class="bi bi-envelope"></i> </a>
       <!-- <a href=""><i class="fa-solid fa-envelope"></i> </a> -->
     </footer>
    
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js" type="module"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js" type="module"></script>
-
-    <script src="/firebase_init.js" type="module"></script>
+   
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js" type="module"></script> -->
+    <!-- <script src="/firebase_init.js" type="module"></script> -->
+     
     <script src="./login_script.js" type="module"></script>
     <script src="/navbar_script.js" type="module"></script>
 
     <script src="../data.js"></script>
-    <script src="../Products/product_pg.js"></script>
+
   </body>
 </html>

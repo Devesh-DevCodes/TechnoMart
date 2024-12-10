@@ -18,7 +18,7 @@
       integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
       crossorigin="anonymous"
     />
-    <link rel="icon" type="image/x-icon" href="../Images/fav-icon.ico" />
+    <link rel="icon" type="image/x-icon" href="../Images/fav-icon-techno.ico" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="./cart.css" />
 
@@ -26,38 +26,38 @@
   </head>
   <body class="container-main">
     <!------------------- Nav Bar----------------- -->
-    <!--  -->
-    <a href="../index.html" class="nav-logo logo-1">
-      <img class="logo" src="../Images/Logo.jpg" alt="Logo" />
-    </a>
-    <!-- </div> -->
-    <div class="nav-1">
-      <a href="../index.html">
-        <h1>Welcome To EduSphere</h1>
-      </a>
-    </div>
+    <div class="nav" id="nav_home">
+      <a href="../index.html" class="logo-1"
+        ><img class="logo" src="../Images/Logo-techno.jpg" alt="TechnoMart Logo"></a>
+      <a href="./index.html" class="logo-2"
+        ><img class="logo" src="../Images/fav-icon-techno.ico" alt="Logo"
+      /></a>
 
-    <div class="nav-2">
-      <a href="../index.html" class="my-nav-link">Home</a>
-      <a href="../login/login.html" class="my-nav-link">Login</a>
-      <a href="../Registration/register.html" class="my-nav-link">Registration</a>
-
-      <a href="../Products/product_pg.html" class="my-nav-link"> Catalogue </a>
-
-      <a href="./cart.html" class="btn_cart cart btn-cart" id="cart">
-        <!-- <span>Cart</span> -->
+      <div class="input">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="search" type="search" placeholder="Search" />
+      </div>
+      <ul class="nav-content">
+        <a href="../index.html" class="my-nav-link">Home</a>
+        <a href="../about/about.html" class="my-nav-link">Category</a>
+        
+        <a href="../Products/product_pg.html" class="my-nav-link"> Catalogue </a>
+        <a href="../Contact/contact.html" class="my-nav-link">Contact Us</a>
+      </ul>
+      <a href="../Cart/cart.html" class="btn_cart cart btn-cart" id="cart">
         <i class="fa-solid fa-cart-shopping"></i>
         <span id="cart_number"></span>
       </a>
+
+      <div id="userProfile" style="display: none;" onclick="window.location.href='../login/login.html'"></div>
+      <!-- Main Login Button -->
+      <button id="main-login-btn" class="btn btn-login" style="display: none;" onclick="window.location.href='../login/login.html'">Login</button>
+
+      <div class="hamburger"><i class="bi bi-list"></i></div>
+      <!-- <script src="./nav_script.js"></script> -->
     </div>
 
-    <!--  Side Bar -->
-    <div class="side-bar">
-      <a href="../Products/product_pg.html" class="side-tabs" id="cse">CSE</a>
-      <a href="../Products/product_pg.html" class="side-tabs" id="ece">ECE</a>
-      <a href="../Products/product_pg.html" class="side-tabs" id="eee">EEE</a>
-      <a href="../Products/product_pg.html" class="side-tabs" id="civil">CIVIL</a>
-    </div>
+
 <!--  -->
     <!-- Main Content -->
 
@@ -65,15 +65,9 @@
     <div class="top_label" id="top_label"></div>
 
     <div class="shopping_cart" id="shopping_cart">
-      <div class="heading cart_heading">
-        <div class="fix_width">Books</div> 
-        <div class="fix_width">Book Name</div> 
-        <div class="fix_width">Price</div>
-        <div class="fix_width">Quantity</div>
-        <div class="fix_width">Amount</div>
-        <div class="fix_width">Remove</div>
+      <div class="heading cart_heading" id="cart_heading">
+        <!-- <hr> -->
       </div>
-      <hr>
       <br>
        
       <!-- <div class="cart_content" id="cart_content"></div> -->
@@ -86,16 +80,21 @@
     <!----------------- footer ---------------->
     <footer class="footer">
       <!-- <hr /> -->
-      <span> Copyright &copy; 2023 | Devesh | @DevCodes </span>
+      <span> Copyright &copy; 2024 | Devesh | @TechnoMart </span>
       <span id="foot-span">|</span> <span> All Rights Reserved</span>
       <!-- <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
-      <a href="https://www.linkedin.com/in/devcodes/ " target="_blank"><i class="bi bi-linkedin"></i> </a>
-      <a href="https://github.com/devcodes543" target="_blank"><i class="bi bi-github"></i></i> </a>
-      <a href="mailto:deveshlucky202@gmail.com" target="_blank"><i class="bi bi-envelope"></i> </a>
+      <a href="https://www.linkedin.com/in/devesh-devcodes/" target="_blank"
+        aria-label="Visit Devesh's LinkedIn profile">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://github.com/devesh-devcodes" target="_blank"><i class="bi bi-github"></i></i> </a>
+      <a href="mailto:technomart.24x7@gmail.com" target="_blank"><i class="bi bi-envelope"></i> </a>
       <!-- <a href=""><i class="fa-solid fa-envelope"></i> </a> -->
     </footer>
    
+   
     <script src="../data.js"></script>
     <script src="./cart.js"></script>
+    <script type="module" src="../navbar_script.js"></script>    
   </body>
 </html>

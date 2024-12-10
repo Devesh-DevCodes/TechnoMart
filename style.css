@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+* ::selection{
+  background-color: #720e83;
+  color: #eac8f9;
+  /* color: #eadf09; */
+}
+
 html {
   font-size: 100%;
   position: relative;
@@ -11,9 +17,10 @@ body {
   margin: 0;
   background-color: #000000;
   color: #d4d4d4;
-  background-image: url(./Images/bgc-tech-transformed.jpeg);
+  background-image: url(./Images/bgc-tech-drk1.png);
   /* filter: blur(1px); */
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   height: 100%;
@@ -72,7 +79,7 @@ body {
 
 .search {
   height: 30px;
-  border: 2px solid black;
+  border: 2px solid rgb(136, 6, 197);
   border-radius: 9px;
   /* height: 29px; */
   background-color: #e0dfdf;
@@ -80,7 +87,16 @@ body {
   font-size: 18px;
   padding-left: 35px;
   width: 19vmax;
+  color: #8306bd;
+  &::placeholder {
+    color: #720e839e;
+  }
 }
+.search:focus {
+  outline: none;
+  border: 2px solid #710e83;
+}
+
 .btn-login,
 .btn-cart {
   height: 40px;
@@ -99,7 +115,7 @@ body {
   /* border: none;
   background-color: transparent; */
   & i {
-    color: #494b4b;
+    color: #5e096ddc;
     font-size: 45px;
   }
   & span {
@@ -115,7 +131,8 @@ body {
   padding: 3px;
   text-align: center;
   background-color: #e7e5e5;
-  border: 2px solid black;
+  border: 2px solid #710e83;
+  color: #710e83;
   border-radius: 50%;
   /* margin: auto; */
   font-size: 20px;
@@ -129,7 +146,6 @@ body {
 }
 .input {
   font-size: 18px;
-  
   margin: auto;
   width: 19vmax;
  
@@ -137,24 +153,21 @@ body {
 .input i {
   
   position: absolute;
-  color: black;
+  color: #710e83;
   line-height: 10px;
   margin: 10px;
 }
 
 /* user profile in nav  */
-#userDetails, #userProfile{
-  cursor: pointer;
-  /* display: flex;
-  flex-direction: column; */
-  & img{
-
+ #userDetails, #userProfile{
+   
+   & img{
+    animation: border-rotate  1.7s linear infinite ;
+    cursor: pointer ;
     height: 60px;
-    width: 60px;
-    
+    width: 60px; 
     border: 2px solid #710e83;
-    border-radius: 100%;
-    cursor: pointer;
+    border-radius: 50%;
   }
 
 }
@@ -204,63 +217,6 @@ body {
 }
 .my-nav-link:hover {
   font-size: 23px;
-}
-
-.dropdown-menu {
-  background-color: #dde1e1; /* Match navbar background */
-}
-.dropdown-item {
-  color: #515656; /* Link color */
-}
-.dropdown-item:hover {
-  background-color: #870690; /* Hover background color */
-  color: white; /* Hover text color */
-}
-
-/* Hide the dropdown arrow */
-.dropdown-toggle::after {
-    display: none; /* Hides the default Bootstrap arrow */
-}
-
-
-/*  ----------------------- side bar ----------------------- */
-.side-bar {
-  position: fixed;
-  top: 10.5rem;
-  grid-area: side;
-  width: 20rem;
-}
-
-.side-bar .side-tabs {
-  box-sizing: border-box;
-
-  color: #ffffff;
-  display: flex;
-  height: 17vh;
-  font-size: 2.9rem;
-  place-content: center;
-  cursor: pointer;
-  transition: 0.8s;
-  align-items: center;
-  text-decoration: none;
-
-  box-shadow: 1px 1px 8px 1px gray;
-  border-radius: 10px;
-  background-color: #202020;
-  background-color: #202020a6;
-}
-.side-tabs:hover {
-  background-color: #4a4a4a;
-  border: 3px solid;
-  border-image-source: linear-gradient(
-    45deg,
-    #ff0077fd,
-    transparent,
-    #01f476e9
-  );
-  border-image-slice: 1;
-  color: #fefefe;
-  font-size: 3rem;
 }
 
 /* ------------------  home page --------------------- */
@@ -318,28 +274,29 @@ body {
 }
 .input i {
   position: absolute;
-  color: black;
+  color: #710e83;
   line-height: 10px;
   margin: 10px;
 }
 
 /* --------------------- login Page ---------------------- */
-
 #login_page {
-  margin: 5%;
+  margin: auto;
+  margin-top: 5rem;
   grid-area: cont;
   width: 50vw;
-  height: 60vh;
-
+  /* height: 100%; */
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
   border: 2px solid transparent;
   box-shadow: 1px 1px 8px 1px #7f4b5f;
   box-shadow: 1px 1px 8px 1px gray;
-  /* background-color: #202020; */
   background-color: #0b0b0bc7;
 
-  border-radius: 2%;
-
-  border-image-source: linear-gradient(35deg, #fd02d8, #01f476, #d900ff);
+  border-image-source: linear-gradient(35deg, #a902fd, #01f476, #d900ff);
   border-image-slice: 1;
 }
 
@@ -356,16 +313,11 @@ body {
   justify-content: center;
   /* color: #111111; */
   margin: 5%;
+  margin-top: 0;
 
   & label {
-    /* margin: 2rem; */
-    display: inline-block;
-    width: 6rem;
+    margin: 2rem;
     font-size: 22px;
-  }
-  & button {
-    margin-left: 2rem;
-    /* font-size: 22px; */
   }
 }
 
@@ -383,22 +335,84 @@ body {
 }
 .btn-login-form {
   padding: 2px;
-  margin: 3%;
+  /* margin: 3%; */
 }
 .btn-login {
   font-size: 18px;
-  width: 6rem;
+  width: 5rem;
   border: 2px solid #000000;
   padding: 5px;
   transition: 0.8s;
   border-radius: 5px;
-}
+} 
 .btn-login:hover {
   font-size: 18px;
   background-color: #d3d0d0;
   cursor: pointer;
 }
 
+.login-btn-google {
+  display: flex; /* Ensure flex container */
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #555;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.3s ease;
+  transition: 0.8s;
+  img{
+    height: 20px;
+    /* width: 20px; */
+    border-radius: 50%;
+
+  }
+}
+
+.login-btn-google:hover , .logout-btn-google:hover{
+  background-color: #f7f7f7;
+  border-color: #4285F4; /* Google Blue */
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+  animation: border-rotate  1.5s linear infinite ;
+}
+
+#userDetails{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* color: #111111; */
+  margin: 4rem;
+  font-size: 22px;
+}
+
+
+/* Keyframes for rotating border colors */
+@keyframes border-rotate {
+  0% {
+      border-color: #4285F4; /* Google Blue */
+  }
+  25% {
+      border-color: #EA4335; /* Google Red */
+  }
+  50% {
+      border-color: #FBBC05; /* Google Yellow */
+  }
+  75% {
+      border-color: #34A853; /* Google Green */
+  }
+  100% {
+      border-color: #4285F4; /* Back to Google Blue */
+  }
+}
+
+
+/* ----------- footer ------------ */
 .footer{
   grid-area: fotr;
   background-color: #3c3b3bd1;
@@ -407,7 +421,6 @@ body {
   text-align: center;
   font-size: 20px;
   margin-top: 4%;
-  z-index: 12;
   
   padding: 1% 0;
   & a{
@@ -470,8 +483,6 @@ body {
 
 @media (max-width:600px) {
   .nav {
-    
-    
     /* display: flex;
     flex-direction: column; */
     /* display: grid; */

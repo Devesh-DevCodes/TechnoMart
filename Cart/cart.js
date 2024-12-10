@@ -1,9 +1,10 @@
 let shoppingCart = document.getElementById("shopping_cart");
+let cartHeading = document.getElementById("cart_heading");
 let cartContent = document.getElementById("cart_content");
 let top_label = document.getElementById("top_label");
 let print_amount = document.getElementById("end_display");
 
-let basket = JSON.parse(localStorage.getItem("data")) || [];
+let basket = [];
 
 // ---------------------cart icon element count -----------------
 let cart_items_count = () => {
@@ -11,214 +12,228 @@ let cart_items_count = () => {
   let count = 0;
 
   for (let x of basket) {
-    count += x.item;
+    count +=  Number(x.Quantity);
   }
   cart_icon_items.innerHTML = count;
+  console.log( 'total cart count',count);
+  
 };
 
-// let cartItems_display=()=>{
-// if(basket.length !== 0){
-//     cartContent.innerHTML=basket.map((x)=>{
-//     let {id,name,price,img}=x;
-//     return `${id}`
-//    })
+// Fetch cart items from backend
+const fetchCart = async () => {
+  try {
+    const response = await fetch('http://localhost:5500/cart/');
+    basket = await response.json();
+    console.log('Fetched Basket:', basket); // Log fetched data
 
-//     let ele=""
-//    for (let i = 0; i < basket.length; i++) {
-//     let {id,name,details,price,img}= basket[i];
-//     ele +=`
-//     <div class="shop_item" id="item_id${id}">
-//             <div class="img" id="img_id">
-//                 <img src=${img} />
-//             </div>
-//             <div class="product_info">
-//                 <h2 class="name">${name}</h2>
-//                 <p class="details">${details}</p>
-//                 <p class="price"><span>₹</span>${price}</p>
-//                 <button class="btn-add" onclick="add_to_cart('${id}','${name}','${price}','${img}')">Add to Cart</button>
-//             </div>
-//     </div>`
-//      cartContent.innerHTML= ele
-//    }
-// }
-//
+    // Call dependent functions here
+      cart_items_count();
+      display_cartItems();
+      total_amount();
+      display_cartItems();
 
+  } catch (error) {
+    console.error('Error fetching cart:', error);
+  }
+};
+
+
+fetchCart();
 console.log(basket);
+
+
 
 // --------------------- Display Cart-items -----------------
 let display_cartItems = () => {
-  if (basket.length !== 0) {
+  console.log('Display called with basket:', basket);
+  if (basket.length !== 0 ) {
+    cartHeading.innerHTML=`
+        <div class="fix_width">Produt</div> 
+        <div class="fix_width">Product Name</div> 
+        <div class="fix_width">Price</div>
+        <div class="fix_width">Quantity</div>
+        <div class="fix_width">Amount</div>
+        <div class="fix_width">Remove</div>
+    `
+    // console.log(basket.length);
+    
     top_label.style.display = "none";
-    return (cartContent.innerHTML = basket
+    
+    
+      cartContent.innerHTML = basket
       .map((element) => {
-        let { id, name, item, price, img } = element;
-        let search = basket.find((x) => x.id == id) || [];
+        
+        let { Prod_ID = 0, Name = 'Unknown', Quantity = 1, Price = 0, Image_URL = '' } = element;
+        let search = basket.find((x) => x.Prod_ID == Prod_ID) || [];
+        
         return `
-                            <div class="cart_item" id="item_id${id}">
-                            <div class="img fix_width " id="img_id">
-                            <img src="${img}" />
-                            </div>
-                <!--  <div class="product_info"> -->
-                    <h3 class="name fix_width book_name">${name}</h3>
-                    <p class="price fix_width"><span>₹</span>${price} / Quantity</p>
-                    <div class="btn-inc-dec fix_width">
-                        <span class="btn-dec" id="btn-dec" onclick="dec_qty(${id})">
-                            <i class="bi bi-dash-lg"></i>
-                        </span>
-
-                        <span id="${id}" class="item-qty">${search.item == undefined ? 0 : search.item}</span>
-          
-                        <span class="btn-inc" id="btn-inc" onclick="inc_qty(${id})">
-                            <i class="bi bi-plus-lg"></i>
-                        </span>
-                    </div>
-                    <p class="t_amount fix_width"><span>₹</span>${price * (search.item == undefined ? 0 : search.item)}</p>
-                      
-                    
-                    <button class="btn-remove fix_width" id="btn-remove" onclick="remove_from_cart(${id})">Remove</button>
-              
-                <!-- </div> -->
+          <div class="cart_item" id="item_id${Prod_ID}">
+            <div class="img fix_width " id="img_id">
+              <img src="${Image_URL}" title="${Name}" />
             </div>
-  
-            `;
-
-      }).join(" <br>"));
-      
+            <h3 class="name fix_width" title="${Name}">${Name.length > 25 ? Name.slice(0, 25) + " ...." : Name}</h3>
+            <p class="price fix_width"><span>₹</span>${Price} / Quantity</p>
+            <div class="btn-inc-dec fix_width">
+              <span class="btn-dec" id="btn-dec" onclick="dec_qty(${Prod_ID})">
+                <i class="bi bi-dash-lg"></i>
+              </span>
+              <span id="${Prod_ID}" class="item-qty">${search.Quantity == undefined ? 0 : search.Quantity}</span>
+              <span class="btn-inc" id="btn-inc" onclick="inc_qty(${Prod_ID})">
+                <i class="bi bi-plus-lg"></i>
+              </span>
+            </div>
+            <p class="t_amount fix_width"><span>₹</span>${Price * (search.Quantity == undefined ? 0 : search.Quantity)}</p>
+            <button class="btn-remove fix_width" id="btn-remove" onclick="remove_from_cart(${Prod_ID})">Remove</button>
+          </div>
+        `;
+      })
+      .join(" <br>");
+      // console.log("Rendered HTML:", cartContent.innerHTML); // Add this
   } 
-  else {
+  else if (basket.length === 0 ) {
+    console.log("Basket is empty");
     shoppingCart.innerHTML = ``;
-    shoppingCart.style.background="transparent";
-    cartContent.innerHTML = ``;
-    print_amount.innerHTML = ``;
     top_label.style.display = "block";
     top_label.style.zIndex = 1;
+    shoppingCart.style.background = "transparent";
+
+    // cartContent.innerHTML = ``;
+    // print_amount.innerHTML = ``;
+    
     return (top_label.innerHTML = `
-            <h3>Cart is Empty !!</h3>
-            <a href="../index.html" ><button class="btn-home">Go to Home Page</button></a>
-        `);
+      <h3>Cart is Empty !!</h3>
+      <a href="../index.html"><button class="btn-home">Go to Home Page</button></a>
+    `);
   }
 };
 
-cart_items_count();
-display_cartItems();
+
+// cart_items_count();
+// display_cartItems();
 
 // ------------------ Decrease item -------------------
-let dec_qty = (id) => {
-  let selectedItem_id = id;
-  let search = basket.find((ele) => ele.id == selectedItem_id);
-  if (search.item == 0) {
-    return 0;
+let dec_qty = async (Prod_ID) => {
+  let selectedItem_id = Prod_ID;
+  let search = basket.find((ele) => ele.Prod_ID == selectedItem_id);
+  if (search.Quantity == 0) {
+    return;
   } else {
-    search.item--;
+    search.Quantity--;
   }
 
-  // console.log(basket)
-  // console.log(search.item)
-  update(id);
-  basket = basket.filter((x) => x.item !== 0);
-
-  // ---------to remove cart products if its qnty=0
+  await update(Prod_ID);
+  basket = basket.filter((x) => x.Quantity !== 0);
   display_cartItems();
-
-  localStorage.setItem("data", JSON.stringify(basket));
-  return search.item;
+  cart_items_count();
+  total_amount();
 };
 
 // ------------------ Increase item -------------------
-let inc_qty = (id) => {
-  let selectedItem_id = id;
-  let search = basket.find((ele) => ele.id == selectedItem_id);
-  search.item++;
-  // console.log(basket)
-  // console.log(search.item)
-  localStorage.setItem("data", JSON.stringify(basket));
-  update(id);
-  return search.item;
-};
-// ------------------ Update Quantity-----------------
-let update = (id) => {
-  let search = basket.find((ele) => ele.id == id);
-  let qty = search.item;
-  // console.log(id)
-  // console.log(search.item)
-  document.getElementById(id).innerHTML = `${qty}`;
+let inc_qty = async (Prod_ID) => {
+  let selectedItem_id = Prod_ID;
+  let search = basket.find((ele) => ele.Prod_ID == selectedItem_id);
+  search.Quantity++;
+  
+  await update(Prod_ID);
+  display_cartItems();
   cart_items_count();
+  total_amount();
+};
 
+// ------------------ Update Quantity -------------------
+let update = async (Prod_ID) => {
+  let search = basket.find((ele) => ele.Prod_ID == Prod_ID);
+  let qty = search.Quantity;
+  
+  // Send updated cart item to backend
+  try {
+    await fetch('http://localhost:5500/update-cart', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        Prod_ID: Prod_ID,
+        quantity: qty
+      })
+    });
+    document.getElementById(Prod_ID).innerHTML = `${qty}`;
+  } catch (error) {
+    console.error('Error updating quantity:', error);
+  }
+  cart_items_count();
   total_amount();
 };
 
 // -------------- Remove Cart Elements ----------------
-
-let remove_from_cart = (id) => {
-  let selectedItem_id = id;
-  basket = basket.filter((x) => x.id != selectedItem_id);
+let remove_from_cart = async (Prod_ID) => {
+  basket = basket.filter((x) => x.Prod_ID != Prod_ID);
   localStorage.setItem("data", JSON.stringify(basket));
+  console.log(`${Prod_ID} removed`);
+
+  try {
+    await fetch('http://localhost:5500/remove-from-cart', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ Prod_ID })
+    });
+  } catch (error) {
+    console.error('Error removing item:', error);
+  }
+
   display_cartItems();
   cart_items_count();
-
   total_amount();
 };
 
 // ----------- clear cart ---------------
-let clear_cart = () => {
+let clear_cart = async () => {
   basket = [];
   localStorage.setItem("data", JSON.stringify(basket));
+  try {
+    await fetch('http://localhost:5500/clear-cart', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ clear: true })
+    });
+  } catch (error) {
+    console.error('Error clearing cart:', error);
+  }
+
   display_cartItems();
   cart_items_count();
   total_amount();
 };
 
 // ----------  Total Amount ----------
-
 let total_amount = () => {
-  // let n=basket.length
   let total_price = 0;
   for (ele of basket) {
-    total_price += Number(ele.price * ele.item);
-    // total_price += (ele.price * ele.item)
-    // console.log(ele.price)
+
+    total_price += Number(ele.Price) * Number(ele.Quantity);
   }
 
-  // cart buttons  -- clear cart and place order
-
-  print_amount.innerHTML = ` 
-        
-        <h2 class="amount" id="amount"> Total Price : ₹ ${total_price} </h2>
-        <button class="btn-crt-page btn-clear-cart" id="btn-clear-cart" onclick="clear_cart()">Clear Cart</button>
-
-        <a href="../Checkout/checkout.html" target="_blank">
-            <button type="button" class="btn-crt-page checkout" id="checkout" onclick="checkout_Page()" >Place Order</button> 
-        </a> 
-        
-    `;
+  print_amount.innerHTML = `
+    <h2 class="amount" id="amount"> Total Price : ₹ ${total_price} </h2>
+    <button class="btn-crt-page btn-clear-cart" id="btn-clear-cart" onclick="clear_cart()">Clear Cart</button>
+    <a href="../Checkout/checkout.html" target="_blank">
+      <button type="button" class="btn-crt-page checkout" id="checkout" onclick="checkout_Page()">Place Order</button> 
+    </a>
+  `;
   console.log("Total Price : ", total_price);
   display_cartItems();
 };
-total_amount();
 
-// ------ Go to Checkout Page -----------
+// total_amount();
 
-let checkout_Page = () => {};
 
-// let total_price=()=>{
-//     if(basket.length !=0){
-//         let total_amt=0;
-//         let each_amount = basket.map((x)=>{
-//             let {id,item,price}=x;
-//             // console.log(item * price);       //return array
-//             total_amt += item * price
-//             return (item * price);
-//         })
-//         console.log(each_amount);       //return array
-//         console.log(total_amt);
-//     }
-//     else return;
-// }
-// total_price()
+// // ------ Go to Checkout Page -----------
 
-// remove_from_cart()
-// document.onclick=alert('h1')
-// document.onchange=alert('h1')
-// window.onclick=alert('h1')
-// window.onchange=alert('h1')
-// window.onload=alert('h1')
+// let checkout_Page = () => {};
+
+// -------- export fetchCart function -----------
+// export { fetchCart}; // Export the fetchCart function

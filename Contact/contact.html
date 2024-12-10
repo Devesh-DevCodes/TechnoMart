@@ -3,18 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Awesome Cdn -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="icon" type="image/x-icon" href="../Images/fav-icon.ico" />
 
-    <link rel="stylesheet" href="../style.css" />
+    <!-- bootstrap icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+
+    <link rel="icon" type="image/x-icon" href="../Images/fav-icon-techno.ico" />
+
     <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="../style.css" />
 
     <title>Contact Us</title>
   </head>
@@ -26,7 +34,7 @@
             <a href="./index.html" class="logo-1"
               ><img class="logo" src="../Images/Logo-techno.jpg" alt="TechnoMart Logo"></a>
             <a href="./index.html" class="logo-2"
-              ><img class="logo" src="./Images/fav-icon.ico" alt="Logo"
+              ><img class="logo" src="../Images/fav-icon-techno.ico" alt="Logo"
             /></a>
       
             <div class="input">
@@ -39,11 +47,13 @@
               <a href="../Products/product_pg.html" class="my-nav-link"> Catalogue </a>
               <a href="./contact.html" class="my-nav-link">Contact Us</a>
             </ul>
-            <a href="./Cart/cart.html" class="btn_cart cart btn-cart" id="cart">
+            <a href="../Cart/cart.html" class="btn_cart cart btn-cart" id="cart">
               <i class="fa-solid fa-cart-shopping"></i>
               <span id="cart_number"></span>
             </a>
-            <button class="btn btn-login login_btn" onclick="login()">Login</button>
+            <div id="userProfile" style="display: none;" onclick="window.location.href='../login/login.html'"></div> <!-- Profile info will be displayed here -->
+  
+            <button id="main-login-btn" class="btn btn-login" onclick="window.location.href='../login/login.html'">Login</button> <!-- Main login button -->
             <div class="hamburger"><i class="bi bi-list"></i></div>
             <!-- <script src="./nav_script.js"></script> -->
         </div>
@@ -52,14 +62,15 @@
           <div class="contact-details">
             <h2>Contact Us</h2>
             <p>
-              For any queries, Please reach out to us. Our Support team will get
+              For any queries, Please reach out to us. <br> Our Support team will get
               back to you within 24 hours.
+
             </p>
-            <div class="c-mail">
-              <i class="fa-regular fa-envelope"> </i><span> technomart.24x7@gmail.com</span>
+            <div class="c-mail c-p">
+              <i class="fa-regular fa-envelope"> </i>&nbsp;  <a href="mailto:technomart.24x7@gmail.com"> technomart.24x7@gmail.com </a>
             </div>
-            <div class="c-phone">
-              <i class="fa-solid fa-phone"></i><span> +91 6386151165</span>
+            <div class="c-phone c-p">
+              <i class="fa-solid fa-phone"></i>&nbsp; <a href="tel:+91 6386151165"> +91 6386151165</a> 
             </div>
             <img src="../Images/contact-img.svg" class="contact-img" alt="">
           </div>
@@ -101,26 +112,23 @@
                   rows="7" required
                 ></textarea>
               </div>
-              <div>
+              <!-- <div>
                 <label for="file">Document : </label>
                 <input type="file" name="file" id="file">
-                <!-- <input type="text" name="subject" id="subject" placeholder="Subject"  required/> -->
-              </div>
+              </div> -->
     
-              <input type="hidden" name="redirect" value="https://techno-mart.netlify.app/Contact/success.html">
+              <input type="hidden" name="redirect" value="https://technomart-24x7.vercel.app/Contact/success.html">
               <div class="h-captcha" data-captcha="true"></div>
               <button id="btn-contact-submit" type="submit" class="btn-contact-submit" >Submit</button>
             </form>
           </div>
         </div>
-        <script src="./contact.js"></script>
-        <script src="https://web3forms.com/client/script.js" async defer></script>
         
         
   <!----------------- footer ---------------->
   <footer class="footer">
     <!-- <hr /> -->
-    <span> Copyright &copy; 2023 | Devesh | @TechnoMart </span>
+    <span> Copyright &copy; 2024 | Devesh | @TechnoMart </span>
     <span id="foot-span">|</span> <span> All Rights Reserved</span>
     <!-- <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
     <a href="https://www.linkedin.com/in/devesh-devcodes/" target="_blank"
@@ -133,5 +141,10 @@
     <!-- <a href=""><i class="fa-solid fa-envelope"></i> </a> -->
   </footer>
 
+  <script src="./contact.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
+
+  <script type="module" src="../navbar_script.js"></script>
   </body>
 </html>

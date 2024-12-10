@@ -1,1 +1,7 @@
 # TechnoMart
+
+<!-- directory structure -->
+```
+
+
+```
