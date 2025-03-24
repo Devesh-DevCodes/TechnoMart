@@ -1,10 +1,16 @@
+// API_BASE_URL
+const API_BASE_URL = window.location.hostname === "localhost" 
+    ? "http://localhost:5500" 
+    : "https://technomart.onrender.com";
+
+
 // ---------------------cart icon element count -----------------
 let basket =[];
 let cart_items_count = () => {
   let cart_icon_items = document.getElementById("cart_number");
   let count = 0;
 
-  fetch('http://localhost:5500/cart')
+  fetch(`${API_BASE_URL}/cart`)
   .then(response => response.json())
   .then(data => {
     basket = data;

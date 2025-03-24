@@ -1,10 +1,15 @@
+// API_BASE_URL
+const API_BASE_URL = window.location.hostname === "localhost" 
+    ? "http://localhost:5500" 
+    : "https://technomart.onrender.com";
+
 let allProducts = [];
 
 // Fetch and display products
 document.addEventListener('DOMContentLoaded', () => {
     const productContainer = document.getElementById('product_pg');
   
-    fetch('http://localhost:5500/api/products') // Ensure this URL matches your backend
+    fetch(`${API_BASE_URL}/api/products`) // Ensure this URL matches your backend
       .then(response => response.json())
       .then(data => {
         allProducts = data; // Store fetched products
@@ -55,7 +60,7 @@ function searchProducts() {
 }
 
   function add_to_cart(Prod_ID, Name, Price, Image_URL) {
-    fetch('http://localhost:5500/add-to-cart', {
+    fetch(`${API_BASE_URL}/add-to-cart`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -84,7 +89,7 @@ let cart_items_count = () => {
   let cart_icon_items = document.getElementById("cart_number");
   let count = 0;
 
-  fetch('http://localhost:5500/cart')
+  fetch(`${API_BASE_URL}/cart`)
   .then(response => response.json())
   .then(data => {
     basket = data;
