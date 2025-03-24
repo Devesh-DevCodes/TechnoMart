@@ -8,7 +8,7 @@ temp.txt
 Thumbs.db
 
 # Ignore Firebase and sensitive config files
-firebase_init.js
+# firebase_init.js
 
 # Ignore generated and cache files
 node_modules/
