@@ -47,8 +47,6 @@ drop table product;
 
 select * from cart;
 
-INSERT INTO cart (Prod_ID, Name,  Price, Image_URL) VALUES
-(1006, 'POCO M6 5G, Orion Blue (4GB, 64GB )', 7999, 'https://m.media-amazon.com/images/I/719LcA76E5L._AC_UY218_.jpg');
 
 drop table Cart;
 
