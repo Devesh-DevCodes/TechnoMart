@@ -1,0 +1,716 @@
+[
+  {
+    "Prod_ID": 1001,
+    "Name": "Samsung Galaxy M05 (Mint Green, 4GB RAM, 64 GB Storage) | 50MP Dual Camera | Bigger 6.7\\\" HD+ Display | 5000mAh Battery | 25W Fast Charging | 2 Gen OS Upgrade & 4 Year Security Update | Without Charger",
+    "Category": "Smartphone",
+    "Price": 6999,
+    "Image_URL": "https://m.media-amazon.com/images/I/81T3olLXpUL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1002,
+    "Name": "Redmi A4 5G (Sparkle Purple, 4GB RAM, 64GB Storage) | Global Debut SD 4s Gen 2 | Segment Largest 6.88in 120Hz | 50MP Dual Camera | Free 33W Charger in Box",
+    "Category": "Smartphone",
+    "Price": 8498,
+    "Image_URL": "https://m.media-amazon.com/images/I/61rIr-o6rGL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1003,
+    "Name": "Samsung Galaxy M15 5G Prime Edition (Stone Grey,6GB RAM,128GB Storage)| Super AMOLED Display| 50MP Triple Cam| 6000mAh Battery| MediaTek Dimensity 6100+| 4 Gen. OS Upgrade & 5 Year Security Update",
+    "Category": "Smartphone",
+    "Price": 13499,
+    "Image_URL": "https://m.media-amazon.com/images/I/81oKOk65TgL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1004,
+    "Name": "POCO C61 Mystical Green 4GB RAM 64GB ROM",
+    "Category": "Smartphone",
+    "Price": 5999,
+    "Image_URL": "https://m.media-amazon.com/images/I/71bQeLHQF-L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1005,
+    "Name": "POCO M6 5G, Orion Blue (4GB, 64GB)",
+    "Category": "Smartphone",
+    "Price": 7998,
+    "Image_URL": "https://m.media-amazon.com/images/I/719LcA76E5L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1006,
+    "Name": "realme NARZO N61 (Voyage Blue,6GB RAM+128GB Storage) 90Hz Eye Comfort Display | IP54 Dust & Water Resistance | 48-Month Fluency | Charger in The Box",
+    "Category": "Smartphone",
+    "Price": 8498,
+    "Image_URL": "https://m.media-amazon.com/images/I/71r0Ysx+oVL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1007,
+    "Name": "realme NARZO N61 (Marble Black, 4GB RAM+64GB Storage) 90Hz Eye Comfort Display | IP54 Dust & Water Resistance | 48-Month Fluency | Charger in The Box",
+    "Category": "Smartphone",
+    "Price": 7498,
+    "Image_URL": "https://m.media-amazon.com/images/I/71EN6N9kUEL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1008,
+    "Name": "Redmi 13C 5G (Starlight Black, 4GB RAM, 128GB Storage) | MediaTek Dimensity 6100+ 5G | 90Hz Display",
+    "Category": "Smartphone",
+    "Price": 9099,
+    "Image_URL": "https://m.media-amazon.com/images/I/81nMsYgIHdL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1009,
+    "Name": "Redmi A4 5G (Starry Black, 4GB RAM, 64GB Storage) | Global Debut SD 4s Gen 2 | Segment Largest 6.88in 120Hz | 50MP Dual Camera | Free 33W Charger in Box",
+    "Category": "Smartphone",
+    "Price": 8498,
+    "Image_URL": "https://m.media-amazon.com/images/I/61dL2AMkOzL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1010,
+    "Name": "Redmi A4 5G (Sparkle Purple, 4GB RAM, 128GB Storage) | Global Debut SD 4s Gen 2 | Segment Largest 6.88in 120Hz | 50MP Dual Camera | Free 33W Charger in Box",
+    "Category": "Smartphone",
+    "Price": 9498,
+    "Image_URL": "https://m.media-amazon.com/images/I/61rIr-o6rGL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1011,
+    "Name": "OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)",
+    "Category": "Smartphone",
+    "Price": 16698,
+    "Image_URL": "https://m.media-amazon.com/images/I/61LB+d0vheL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1012,
+    "Name": "Redmi A4 5G (Starry Black, 4GB RAM, 128GB Storage) | Global Debut SD 4s Gen 2 | Segment Largest 6.88in 120Hz | 50MP Dual Camera | Free 33W Charger in Box",
+    "Category": "Smartphone",
+    "Price": 9498,
+    "Image_URL": "https://m.media-amazon.com/images/I/61dL2AMkOzL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1013,
+    "Name": "realme NARZO N61 (Voyage Blue,4GB RAM+64GB Storage) 90Hz Eye Comfort Display | IP54 Dust & Water Resistance | 48-Month Fluency | Charger in The Box",
+    "Category": "Smartphone",
+    "Price": 7498,
+    "Image_URL": "https://m.media-amazon.com/images/I/71r0Ysx+oVL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1014,
+    "Name": "realme NARZO 70x 5G (Ice Blue, 8GB RAM,128GB Storage)|120Hz Ultra Smooth Display|Dimensity 6100+ 6nm 5G|50MP AI Camera|45W Charger in The Box",
+    "Category": "Smartphone",
+    "Price": 13998,
+    "Image_URL": "https://m.media-amazon.com/images/I/71w-mmKgIfL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1015,
+    "Name": "Redmi 13C 5G (Startrail Silver, 4GB RAM, 128GB Storage) | MediaTek Dimensity 6100+ 5G | 90Hz Display",
+    "Category": "Smartphone",
+    "Price": 9099,
+    "Image_URL": "https://m.media-amazon.com/images/I/81Z1scL6HvL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 1016,
+    "Name": "Motorola G45 5G (Brilliant Blue, 8GB RAM, 128GB Storage)",
+    "Category": "Smartphone",
+    "Price": 13625,
+    "Image_URL": "https://m.media-amazon.com/images/I/81dl4dQY3BL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2001,
+    "Name": "Apple iPhone 13 (128GB) - Starlight",
+    "Category": "Iphone",
+    "Price": 45490,
+    "Image_URL": "https://m.media-amazon.com/images/I/71GLMJ7TQiL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2002,
+    "Name": "Apple iPhone 13 (128GB) - Midnight",
+    "Category": "Iphone",
+    "Price": 45490,
+    "Image_URL": "https://m.media-amazon.com/images/I/61VuVU94RnL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2003,
+    "Name": "Apple iPhone 13 (128GB) - Pink",
+    "Category": "Iphone",
+    "Price": 45490,
+    "Image_URL": "https://m.media-amazon.com/images/I/61l9ppRIiqL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2004,
+    "Name": "Apple iPhone 13 (128GB) - Blue",
+    "Category": "Iphone",
+    "Price": 45490,
+    "Image_URL": "https://m.media-amazon.com/images/I/71xb2xkN5qL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2005,
+    "Name": "Apple iPhone 14 (128 GB) - Midnight",
+    "Category": "Iphone",
+    "Price": 54990,
+    "Image_URL": "https://m.media-amazon.com/images/I/61cwywLZR-L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2006,
+    "Name": "Apple iPhone 15 (128 GB) - Blue",
+    "Category": "Iphone",
+    "Price": 64900,
+    "Image_URL": "https://m.media-amazon.com/images/I/71d7rfSl0wL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2007,
+    "Name": "Apple iPhone 13 (128GB) - Green",
+    "Category": "Iphone",
+    "Price": 45490,
+    "Image_URL": "https://m.media-amazon.com/images/I/61-r9zOKBCL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2008,
+    "Name": "iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Ultramarine",
+    "Category": "Iphone",
+    "Price": 77400,
+    "Image_URL": "https://m.media-amazon.com/images/I/713SsA7gftL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2009,
+    "Name": "iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Black",
+    "Category": "Iphone",
+    "Price": 77400,
+    "Image_URL": "https://m.media-amazon.com/images/I/615O-NFQKdL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2010,
+    "Name": "Apple iPhone 15 (128 GB) - Black",
+    "Category": "Iphone",
+    "Price": 64900,
+    "Image_URL": "https://m.media-amazon.com/images/I/71657TiFeHL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2011,
+    "Name": "iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; White",
+    "Category": "Iphone",
+    "Price": 77400,
+    "Image_URL": "https://m.media-amazon.com/images/I/61lLjrvDEkL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2012,
+    "Name": "Apple iPhone 15 (128 GB) - Green",
+    "Category": "Iphone",
+    "Price": 63900,
+    "Image_URL": "https://m.media-amazon.com/images/I/71nvkHnPpZL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2013,
+    "Name": "Apple iPhone 15 Plus (128 GB) - Black",
+    "Category": "Iphone",
+    "Price": 69900,
+    "Image_URL": "https://m.media-amazon.com/images/I/71zFRCcMS2L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2014,
+    "Name": "iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Pink",
+    "Category": "Iphone",
+    "Price": 77400,
+    "Image_URL": "https://m.media-amazon.com/images/I/61DjMd76QnL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2015,
+    "Name": "Apple iPhone 14 (128 GB) - Blue",
+    "Category": "Iphone",
+    "Price": 55990,
+    "Image_URL": "https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 2016,
+    "Name": "Apple iPhone 13 (128GB) - (Product) RED",
+    "Category": "Iphone",
+    "Price": 45490,
+    "Image_URL": "https://m.media-amazon.com/images/I/71gm8v4uPBL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3001,
+    "Name": "Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey",
+    "Category": "Macbook",
+    "Price": 56990,
+    "Image_URL": "https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3002,
+    "Name": "Apple 2024 MacBook Air (13-inch, Apple M3 chip with 8‑core CPU and 8‑core GPU, 16GB Unified Memory, 256GB) - Midnight",
+    "Category": "Macbook",
+    "Price": 109990,
+    "Image_URL": "https://m.media-amazon.com/images/I/71x9JI-Il0L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3003,
+    "Name": "Apple 2024 MacBook Pro Laptop with M4 Pro chip with 12‑core CPU and 16‑core GPU: Built for Apple Intelligence, (14.2″) Liquid Retina XDR Display, 24GB Unified Memory, 512GB SSD Storage; Space Black",
+    "Category": "Macbook",
+    "Price": 191990,
+    "Image_URL": "https://m.media-amazon.com/images/I/61eA9PkZ07L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3004,
+    "Name": "Apple 2024 MacBook Pro Laptop with M4 chip with 10‑core CPU and 10‑core GPU: Built for Apple Intelligence, (14.2″) Liquid Retina XDR Display, 16GB Unified Memory, 512GB SSD Storage; Space Black",
+    "Category": "Macbook",
+    "Price": 162990,
+    "Image_URL": "https://m.media-amazon.com/images/I/61eA9PkZ07L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3005,
+    "Name": "Apple 2024 MacBook Air 15″ Laptop with M3 chip: 38.91 cm (15.3″) Liquid Retina Display, 16GB Unified Memory, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera, Touch ID- Space Grey",
+    "Category": "Macbook",
+    "Price": 126806,
+    "Image_URL": "https://m.media-amazon.com/images/I/71Vo2dXqhLL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3006,
+    "Name": "2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Midnight",
+    "Category": "Macbook",
+    "Price": 93906,
+    "Image_URL": "https://m.media-amazon.com/images/I/71RDgtHsREL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3007,
+    "Name": "Apple 2024 MacBook Air (13-inch, Apple M3 chip with 8‑core CPU and 8‑core GPU, 16GB Unified Memory, 256GB) - Silver",
+    "Category": "Macbook",
+    "Price": 108006,
+    "Image_URL": "https://m.media-amazon.com/images/I/71aJltea-kL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3008,
+    "Name": "Apple 2024 MacBook Pro Laptop with M4 Pro chip with 14‑core CPU and 20‑core GPU: Built for Apple Intelligence, (16.2″) Liquid Retina XDR Display, 24GB Unified Memory, 512GB SSD Storage; Space Black",
+    "Category": "Macbook",
+    "Price": 239990,
+    "Image_URL": "https://m.media-amazon.com/images/I/61opqQEBUxL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3009,
+    "Name": "2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Space Gray",
+    "Category": "Macbook",
+    "Price": 94990,
+    "Image_URL": "https://m.media-amazon.com/images/I/71r8h9mLzHL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3010,
+    "Name": "Apple 2024 MacBook Air (13-inch, Apple M3 chip with 8‑core CPU and 8‑core GPU, 16GB Unified Memory, 256GB) - Space Gray",
+    "Category": "Macbook",
+    "Price": 108006,
+    "Image_URL": "https://m.media-amazon.com/images/I/711xdPNfEhL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3011,
+    "Name": "Apple 2024 MacBook Pro Laptop with M4 Max chip with 14‑core CPU and 32‑core GPU: Built for Apple Intelligence, (14.2″) Liquid Retina XDR Display, 36GB Unified Memory, 1TB SSD Storage; Space Black",
+    "Category": "Macbook",
+    "Price": 309990,
+    "Image_URL": "https://m.media-amazon.com/images/I/61eA9PkZ07L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3012,
+    "Name": "2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Starlight",
+    "Category": "Macbook",
+    "Price": 94990,
+    "Image_URL": "https://m.media-amazon.com/images/I/710TJuHTMhL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3013,
+    "Name": "Apple 2024 MacBook Pro Laptop with M4 chip with 10‑core CPU and 10‑core GPU: Built for Apple Intelligence, 35.97 cm (14.2″) Liquid Retina XDR Display 16GB Unified Memory, 1TB SSD Storage; Space Black",
+    "Category": "Macbook",
+    "Price": 182990,
+    "Image_URL": "https://m.media-amazon.com/images/I/61eA9PkZ07L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3014,
+    "Name": "2022 Apple MacBook Air Laptop with M2 chip: 13.6-inch Liquid Retina Display, 16GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone and iPad; Silver",
+    "Category": "Macbook",
+    "Price": 94990,
+    "Image_URL": "https://m.media-amazon.com/images/I/71eXNIDUGjL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3015,
+    "Name": "Apple 2024 MacBook Pro Laptop with M4 Pro chip with 10‑core CPU and 16‑core GPU: Built for Apple Intelligence, (14.2″) Liquid Retina XDR Display, 24GB Unified Memory, 512GB SSD Storage; Silver",
+    "Category": "Macbook",
+    "Price": 191990,
+    "Image_URL": "https://m.media-amazon.com/images/I/61S+iQmF5NL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 3016,
+    "Name": "Apple 2024 MacBook Pro Laptop with M4 chip with 10‑core CPU and 10‑core GPU: Built for Apple Intelligence, 35.97 cm (14.2″) Liquid Retina XDR Display, 16GB Unified Memory, 512GB SSD Storage; Silver",
+    "Category": "Macbook",
+    "Price": 162990,
+    "Image_URL": "https://m.media-amazon.com/images/I/61S+iQmF5NL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4001,
+    "Name": "Lenovo Tab M10 HD Tablet (10.1 inches, 3GB, 32GB, Wi-Fi + 4G LTE), Slate Black",
+    "Category": "Tablet",
+    "Price": 6405,
+    "Image_URL": "https://m.media-amazon.com/images/I/71KcsYWu1uL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4002,
+    "Name": "Redmi Pad SE| All Day Battery | Qualcomm Snapdragon 680| 90Hz Refresh Rate| 8GB, 128GB Tablet| FHD+ Display (11-inch/27.81cm)| Dolby Atmos| Quad Speakers| Wi-Fi| Gray",
+    "Category": "Tablet",
+    "Price": 13999,
+    "Image_URL": "https://m.media-amazon.com/images/I/715A8CJImML._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4003,
+    "Name": "Xiaomi Pad 6| Qualcomm Snapdragon 870| Powered by HyperOS |144Hz Refresh Rate| 8GB, 256GB| 2.8K+ Display (11-inch/27.81cm) Tablet| Dolby Vision Atmos| Quad Speakers| Wi-Fi| Gray",
+    "Category": "Tablet",
+    "Price": 22999,
+    "Image_URL": "https://m.media-amazon.com/images/I/61N1RFGVVCL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4004,
+    "Name": "OnePlus Pad Go 28.85cm (11.35 inch) 2.4K 7:5 Ratio ReadFit Eye Care LCD Display, Dolby Atmos Quad Speakers,Wi-Fi Only, 8GB RAM 128 GB ROM Expandable Up-to 1TB, Twin Mint Colour",
+    "Category": "Tablet",
+    "Price": 19567,
+    "Image_URL": "https://m.media-amazon.com/images/I/51oj5gE7P+L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4005,
+    "Name": "Lenovo Calling Tab M8 2nd Gen Tablet (8-inch, 2GB, 32GB, Wi-Fi + 4G LTE + Calling), Iron Grey",
+    "Category": "Tablet",
+    "Price": 6430,
+    "Image_URL": "https://m.media-amazon.com/images/I/61LdWaeRtML._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4006,
+    "Name": "Honor Pad X8 25.65 cm (10.1 inch) FHD Display, 3GB RAM, 32GB Storage, Mediatek MT8786, Android 12, Tuv Certified Eye Protection, Up to 14 Hours Battery WiFi Tablet, Blue Hour",
+    "Category": "Tablet",
+    "Price": 8999,
+    "Image_URL": "https://m.media-amazon.com/images/I/616otiZuSIL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4007,
+    "Name": "Acer Iconia Tab iM10-22 | 10.36\\\" 2K IPS Display, Quad Speakers, Helio G99, 6GB + 128GB, 16MP Rear + 8MP Front Camera, Fingerprint Reader, Wi-Fi + 4G LTE(Calling), Android 14, Slim Metal Body, Gold",
+    "Category": "Tablet",
+    "Price": 14990,
+    "Image_URL": "https://m.media-amazon.com/images/I/71l3RlMZQ7L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4008,
+    "Name": "Samsung Galaxy Tab A9+ 27.94 cm (11.0 inch) Display, RAM 8 GB, ROM 128 GB Expandable, Wi-Fi Tablet, Graphite",
+    "Category": "Tablet",
+    "Price": 20999,
+    "Image_URL": "https://m.media-amazon.com/images/I/61afkty1foL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4009,
+    "Name": "Lenovo Tab M10 Fhd 3Rd Gen|10.1 Inch (25.65 Cm) Wuxga IPS Display|100% Srgb|4 Gb Ram,64 Gb ROM|Octa-Core Processor|Wi-Fi|5100Mah Battery|Dual Speakers|Tüv Rheinland Low Blue Light Certified",
+    "Category": "Tablet",
+    "Price": 9999,
+    "Image_URL": "https://m.media-amazon.com/images/I/51x+rjlKmwL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4010,
+    "Name": "Samsung Galaxy Tab S9 FE 27.69 cm (10.9 inch) Display, RAM 6 GB, ROM 128 GB Expandable, S Pen in-Box, Wi-Fi, IP68 Tablet, Gray",
+    "Category": "Tablet",
+    "Price": 28899,
+    "Image_URL": "https://m.media-amazon.com/images/I/61-jnnIE68L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4011,
+    "Name": "Redmi Pad SE| All Day Battery | Qualcomm Snapdragon 680| 90Hz Refresh Rate| 8GB, 128GB Tablet| FHD+ Display (11-inch/27.81cm)| Dolby Atmos| Quad Speakers| Wi-Fi| Purple",
+    "Category": "Tablet",
+    "Price": 13999,
+    "Image_URL": "https://m.media-amazon.com/images/I/71HvMPf-4qL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4012,
+    "Name": "OnePlus Pad Go 28.85Cm (11.35 Inch) 2.4K 7:5 Ratio Readfit Eye Care LCD Display,Dolby Atmos Quad Speakers,4G LTE(Calling) + Wi-Fi Connectivity Tablet,8Gb Ram 256 Gb Storage Expandable Up-to 1Tb,Green",
+    "Category": "Tablet",
+    "Price": 23998,
+    "Image_URL": "https://m.media-amazon.com/images/I/51oj5gE7P+L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4013,
+    "Name": "Samsung Galaxy Tab S9 FE+ 31.50 cm (12.4 inch) Display, RAM 8 GB, ROM 128 GB Expandable, S Pen in-Box, Wi-Fi, IP68 Tablet, Gray",
+    "Category": "Tablet",
+    "Price": 39730,
+    "Image_URL": "https://m.media-amazon.com/images/I/61l5a94VKkL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4014,
+    "Name": "Acer Iconia Tab iM10-22 | 10.36\\\" 2K IPS Display, Quad Speakers, 8GB RAM + 256GB Storage, 16MP Rear + 8MP Front Camera, Fingerprint Reader, Wi-Fi + 4G LTE(Calling), Android 14, Slim Metal Body, Gold",
+    "Category": "Tablet",
+    "Price": 16990,
+    "Image_URL": "https://m.media-amazon.com/images/I/71l3RlMZQ7L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4015,
+    "Name": "Lenovo Tab Plus with Octa JBL Hi-Fi Speakers| 8 GB RAM, 128 GB ROM| 11.5 Inch, 2K, 90 Hz Refresh| Wi-Fi Tablet| Android 14| 45 W Fast Charger| Built-in Kickstand| Color: Luna Grey",
+    "Category": "Tablet",
+    "Price": 18999,
+    "Image_URL": "https://m.media-amazon.com/images/I/61ZEkMXevXL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 4016,
+    "Name": "Lenovo Tab Plus with Octa JBL Hi-Fi Speakers| 8 GB RAM, 256 GB ROM| 11.5 Inch, 2K, 90 Hz Refresh| Wi-Fi Tablet| Android 14| 45 W Fast Charger| Built-in Kickstand| Color: Luna Grey",
+    "Category": "Tablet",
+    "Price": 20998,
+    "Image_URL": "https://m.media-amazon.com/images/I/61ZEkMXevXL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5001,
+    "Name": "(Refurbished) Lenovo ThinkPad 8th Gen Intel Core i5 Thin & Light HD Laptop (16 GB DDR4 RAM/512 GB SSD/14 (35.6 cm) HD/Windows 11/MS Office/WiFi/Bluetooth 4.1/Webcam/Intel Graphics)",
+    "Category": "Laptop",
+    "Price": 17499,
+    "Image_URL": "https://m.media-amazon.com/images/I/611AaVzaCQL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5002,
+    "Name": "(Refurbished) HP EliteBook 820 G4 7th Gen Intel Core i5 Thin & Light HD Laptop (8 GB DDR4 RAM|256 GB SSD|12.5\\\" (31.8 cm) HD|Windows 11|MS Office|WiFi|Webcam|Intel HD Graphics)",
+    "Category": "Laptop",
+    "Price": 14199,
+    "Image_URL": "https://m.media-amazon.com/images/I/61HoUL4ChjL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5003,
+    "Name": "HP Laptop 15s, 12th Gen Intel Core i3, 15.6-inch (39.6 cm), 8GB DDR4, 512GB SSD, Thin & Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), fq5007TU / FQ5327TU",
+    "Category": "Laptop",
+    "Price": 34990,
+    "Image_URL": "https://m.media-amazon.com/images/I/51ksgjS71zL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5004,
+    "Name": "Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey",
+    "Category": "Laptop",
+    "Price": 56990,
+    "Image_URL": "https://m.media-amazon.com/images/I/71jG+e7roXL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5005,
+    "Name": "Acer Aspire 3 Laptop Intel Core Celeron N4500 Processor Laptop (8 GB LPDDR4X SDRAM/256 GB SSD/Win11 Home/38 WHR/HD Webcam) A324-45 with 35.56 cm (14\\\") HD Display, Pure Silver, 1.3 KG",
+    "Category": "Laptop",
+    "Price": 19990,
+    "Image_URL": "https://m.media-amazon.com/images/I/61Y8j1QN5YL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5006,
+    "Name": "Lenovo V14 G3 (2024), Intel Core i5 12th Gen 1235U - (16GB/512GB SSD/Intel UHD Graphics/Windows 11 Home) Thin and Light Business Laptop/14.0\\\" FHD Display/Iron Grey/1.57 kg/MS Office",
+    "Category": "Laptop",
+    "Price": 41990,
+    "Image_URL": "https://m.media-amazon.com/images/I/51aoXk4rzXL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5007,
+    "Name": "HP 15s Core i3 12th Gen (8GB RAM/512 GB SSD/FHD/Windows 11/MS Office 21/15.6” (39.6cm)/Silver/1.69kg) fy5006TU Laptop",
+    "Category": "Laptop",
+    "Price": 35590,
+    "Image_URL": "https://m.media-amazon.com/images/I/51y647nNpDL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5008,
+    "Name": "HP Laptop 255 G9 (2024), AMD Athlon Silver 3050U - (8GB/256GB SSD/AMD Radeon Graphics/Windows 11) Thin and Light Business Laptop/15.6\\\" (39.62cm)/Black/1.47 kg/MS Office 2021",
+    "Category": "Laptop",
+    "Price": 23475,
+    "Image_URL": "https://m.media-amazon.com/images/I/714KND42UKL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5009,
+    "Name": "Dell Inspiron 3535, AMD Ryzen 3 7320U Processor, (8GB RAM/512GB SSD/Window 11/MS Office'' 21/15.6\\\"(39.62 cm) FHD Display/15 Month McAfee/Carbon Black/1.67kg Thin & Light Laptop",
+    "Category": "Laptop",
+    "Price": 29990,
+    "Image_URL": "https://m.media-amazon.com/images/I/61Kfqt-h5-L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5010,
+    "Name": "Lenovo Latest Launched V15 (2024) 15.6\\\" FHD Anti-Glare Laptop, Intel Celeron N4500, 8GB DDR4 RAM, 256 NVME SSD, Intel UHD Graphics, Wi-Fi, Bluetooth, Windows 11, Black,1 Year Warranty",
+    "Category": "Laptop",
+    "Price": 22990,
+    "Image_URL": "https://m.media-amazon.com/images/I/71ItRJKLPVL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5011,
+    "Name": "HP 15 Core I5 13Th Gen Intel(16Gb Ram/512Gb Ssd/Fhd/Windows 11/Ms Office/Backlit Kb/15.6\\\"(39.6Cm)/Silver/1.59Kg) Fd0316Tu Laptop",
+    "Category": "Laptop",
+    "Price": 54990,
+    "Image_URL": "https://m.media-amazon.com/images/I/51EZx2f589L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5012,
+    "Name": "Dell [Smartchoice] Core i3-1215U, 12th Gen (8GB RAM/512GB SSD/FHD/Window 11/MS Office'' 21/15\\\"(38 cm)/15 Month McAfee/Black/1.69kg Laptop",
+    "Category": "Laptop",
+    "Price": 33990,
+    "Image_URL": "https://m.media-amazon.com/images/I/61-Y-eWXqtL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5013,
+    "Name": "HP Laptop 255 G9 (2024), AMD Ryzen 5 5625U Hexa Core - (8GB/512GB SSD/AMD Radeon Graphics/Windows 11) Thin and Light Business Laptop/15.6\\\" (39.62cm)/Silver/1.47 kg/MS Office 2021",
+    "Category": "Laptop",
+    "Price": 33680,
+    "Image_URL": "https://m.media-amazon.com/images/I/71NfES5o1WL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5014,
+    "Name": "Acer Aspire Lite AMD Ryzen 5-5625U Premium Thin and Light Laptop (16 GB RAM/512 GB SSD/Windows 11 Home) AL15-41, 39.62 cm (15.6\\\") Full HD Display, Metal Body, Steel Gray, 1.59 KG",
+    "Category": "Laptop",
+    "Price": 34990,
+    "Image_URL": "https://m.media-amazon.com/images/I/61fDHkQ6MqL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5015,
+    "Name": "ACER TravelLite Laptop AMD Ryzen 3-7330U Processor (8 GB RAM DDR4/512 GB SSD/Windows 11 Home) 35.5 cm (14\\\" inch) Full HD Display, Metal Body, Silver Color, 1.35 KG 3 Years Warranty",
+    "Category": "Laptop",
+    "Price": 26999,
+    "Image_URL": "https://m.media-amazon.com/images/I/51YMAIY21yL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 5016,
+    "Name": "(Refurbished) Lenovo Thinkpad T14 Gen1 10th Gen Intel Core i5 Thin & Light FHD Touchscreen Laptop (16 GB DDR4 RAM|256 GB SSD|14\\\" FHD Touchscreen|Windows 11 Pro|MS Office|Intel HD Graphics)",
+    "Category": "Laptop",
+    "Price": 25999,
+    "Image_URL": "https://m.media-amazon.com/images/I/71Y4ETNzJdL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6001,
+    "Name": "EASYSHOP Multifunctional Data Cable Conversion Head Portable Storage Box, Multi-Type Charging Line Convertor USB Type C Adapter Tool Contains Sim Card Slot Tray Eject Pin, Phone Holder (Multi-Colour)",
+    "Category": "Accessories",
+    "Price": 89,
+    "Image_URL": "https://m.media-amazon.com/images/I/61lHobSCOML._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6002,
+    "Name": "Sounce 3 in 1 Cleaning Kit Set for Screen PC, Laptops, Monitors, Mobiles, LCD, LED, TV/Professional Quality/Prevents Static Electricity, 100ml with Micro Fiber Cloth and Brush",
+    "Category": "Accessories",
+    "Price": 149,
+    "Image_URL": "https://m.media-amazon.com/images/I/71CFc-fYMBL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6003,
+    "Name": "Tensea Mobile Phone Charging Stand, Multi-Functional Storage Holder, Bedside Fixed Rack, Bedroom, Office Accessories, Acrylonitrile Butadiene Styrene, White 01, Portable Electronic Devices",
+    "Category": "Accessories",
+    "Price": 88,
+    "Image_URL": "https://m.media-amazon.com/images/I/61jVUB4y7pL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6004,
+    "Name": "Sounce 25 Pcs Spiral Cable Protectors & Wire Protectors Spring Wire for All Wired Accessories for USB Charger, Data Cable, Headphones, MacBook, Laptop, Elastic Cord Saver (Multi-Color)",
+    "Category": "Accessories",
+    "Price": 99,
+    "Image_URL": "https://m.media-amazon.com/images/I/61cK++Cg+LL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6005,
+    "Name": "LIRAMARK Wall Mounted Mobile Phone Charging Stand, Storage Holder, Bedside Fixed Rack, Home Organization and Storage Supplies, Bedroom Accessories, Office Accessories, Bathroom Accessories (Pack of 1)",
+    "Category": "Accessories",
+    "Price": 99,
+    "Image_URL": "https://m.media-amazon.com/images/I/61mJSikurML._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6006,
+    "Name": "Sounce Spiral Charger Cable Protector Data Cable Saver Charging Cord Protective Cable Cover Headphone MacBook Laptop Earphone Cell Phone Set of 3 (Cable Protector (12 Units)",
+    "Category": "Accessories",
+    "Price": 59,
+    "Image_URL": "https://m.media-amazon.com/images/I/61+jiWUjJZL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6007,
+    "Name": "GLUN® Electronic Portable Digital LED Screen Luggage Weighing Scale, 50 kg/110 Lb For Multi-Purpose Use.",
+    "Category": "Accessories",
+    "Price": 249,
+    "Image_URL": "https://m.media-amazon.com/images/I/61Z35SZs7lL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6008,
+    "Name": "STRIFF Webcam Cover Slide, Ultra Thin Laptop Camera Cover Slide Blocker for Computer MacBook Pro iMac PC Tablet (Pack of 3), Black",
+    "Category": "Accessories",
+    "Price": 149,
+    "Image_URL": "https://m.media-amazon.com/images/I/61207YCPVlS._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6009,
+    "Name": "Portronics AUTO 12 in-Car Bluetooth Receiver for Handsfree Calling, Music System, Supports All Smartphones (Black)",
+    "Category": "Accessories",
+    "Price": 478,
+    "Image_URL": "https://m.media-amazon.com/images/I/51Ioc0bbHqL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6010,
+    "Name": "Sounce Shutter Remote Control with Bluetooth Wireless Technology - Create Amazing Photos and Videos Hands-Free - Works with Most Smartphones and Tablets (iOS and Android) (Black)",
+    "Category": "Accessories",
+    "Price": 169,
+    "Image_URL": "https://m.media-amazon.com/images/I/51x9HSFrFrL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6011,
+    "Name": "Ambrane USB Type C Female to USB Male OTG Adapter with 5 Gbps High-Speed Data Transfer, Compatible with Laptops, Tablets, Smartphone, Chargers and More Devices (AOTG-A1, Grey)",
+    "Category": "Accessories",
+    "Price": 149,
+    "Image_URL": "https://m.media-amazon.com/images/I/61s4K51Go3L._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6012,
+    "Name": "Elv Foldable, Portable, Tablet/Phone Stand. Compatible Phone Holder for iPhone, Android, Samsung, OnePlus, Xiaomi, Oppo, Vivo, Asus. Perfect for Bed,Office, Home,Gift and Desktop (Black)",
+    "Category": "Accessories",
+    "Price": 75,
+    "Image_URL": "https://m.media-amazon.com/images/I/713Q0lVmCTL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6013,
+    "Name": "Portronics Mport 31C USB C Hub (4-in-1), Type C Multiport Adapter with 1 x USB 3.0 & 3 x USB 2.0 Ports, up to 5 Gbps High Speed Data Transfer for Laptop, MacBook, PC (Grey)",
+    "Category": "Accessories",
+    "Price": 319,
+    "Image_URL": "https://m.media-amazon.com/images/I/41C6odOsPNL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6014,
+    "Name": "amazon basics Travel Organiser for Electronic Accessories, Flexible Padded Dividers, Waterproof, Foam Padding, For Cables, Chargers, Hard Disk, Power Bank (Maroon)",
+    "Category": "Accessories",
+    "Price": 389,
+    "Image_URL": "https://m.media-amazon.com/images/I/715qEPv14EL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6015,
+    "Name": "Aliston Electronic Portable Fishing Hook Type Digital LED Screen Luggage Weighing Scale, 50 kg/110 Lb (Black)",
+    "Category": "Accessories",
+    "Price": 205,
+    "Image_URL": "https://m.media-amazon.com/images/I/61UO3xkiNuL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6016,
+    "Name": "rts Universal Travel Adapter, International All in One Worldwide Travel Adapter and Wall Charger with USB Ports with Multi Type Power Outlet USB 2.1A,100-250 Voltage Travel Charger (Black)",
+    "Category": "Accessories",
+    "Price": 579,
+    "Image_URL": "https://m.media-amazon.com/images/I/611RCy1XjsL._AC_UY218_.jpg"
+  },
+  {
+    "Prod_ID": 6017,
+    "Name": "WeCool S7 Selfie Stick with tripod stand, 71 inches Ultra Long with Reinforced Quad Stand, 360° Rotatable Handle with Detachable Bluetooth Remote. Ultimate Stability for Vlogging with Cameras & GoPros",
+    "Category": "Accessories",
+    "Price": 1799,
+    "Image_URL": "https://m.media-amazon.com/images/I/71eKFFd1wHL._AC_UL320_.jpg"
+  },
+  {
+    "Prod_ID": 6018,
+    "Name": "WeCool S7 Selfie Stick with tripod stand, 71 inches Ultra Long with Reinforced Quad Stand, 360° Rotatable Handle with Detachable Bluetooth Remote. Ultimate Stability for Vlogging with Cameras & GoPros",
+    "Category": "Accessories",
+    "Price": 1799,
+    "Image_URL": "https://m.media-amazon.com/images/I/71eKFFd1wHL._AC_UL320_.jpg"
+  },
+  {
+    "Prod_ID": 6019,
+    "Name": "Amazon Basics Aluminum Tripod (133CM) | Lightweight & Versatile | Mobile Phone Holder & Carry Bag | Compatible with Smartphones, GoPro, Cameras",
+    "Category": "Accessories",
+    "Price": 749,
+    "Image_URL": "https://m.media-amazon.com/images/I/51mznaLlGfL._AC_UL320_.jpg"
+  },
+  {
+    "Prod_ID": 6020,
+    "Name": "Celfiexpt Long Selfie Stick with Tripod Stand Reinforced 62\\\" Tripod for iPhone Solidest Holder Multifunctional Mobile Tripod Stand with Remote for Travel Vlogging Mirroeless/Action Camera Mobile Phone",
+    "Category": "Accessories",
+    "Price": 1994,
+    "Image_URL": "https://m.media-amazon.com/images/I/61gb2YaPAVL._AC_UL320_.jpg"
+  },
+  {
+    "Prod_ID": 6021,
+    "Name": "Mobilife 62\\\" Selfie Stick with Tripod Stand 360 Degree Rotation Dual Fill Light Balance Handle Long Reinforced Tripod with Remote for iPhone Camera Vlogging Travel Live Stream, Black",
+    "Category": "Accessories",
+    "Price": 2184,
+    "Image_URL": "https://m.media-amazon.com/images/I/61c4Vz9MZeL._AC_UL320_.jpg"
+  },
+  {
+    "Prod_ID": 6022,
+    "Name": "Amazon Basics 60 inch Professional Tripod with Phone Holder & 360° Rotating Ball Head | Extendable Height (53-151.5 cm) | Includes Carry Bag | for DSLR Camera & Smartphone",
+    "Category": "Accessories",
+    "Price": 1099,
+    "Image_URL": "https://m.media-amazon.com/images/I/61gpEn4JJOL._AC_UL320_.jpg"
+  }
+]

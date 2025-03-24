@@ -18,10 +18,12 @@ build/
 
 # Ignore backup or unwanted files
 trash/
+idx1.html
+nav_script.js
 EduSphere Presentation.pdf
 google33f8f655d95a6409.html
 
 # Ignore database or data dump files
 *.sqlite
 *.db
-*.json
+
