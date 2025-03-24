@@ -6,6 +6,11 @@ let print_amount = document.getElementById("end_display");
 
 let basket = [];
 
+// API_BASE_URL
+const API_BASE_URL = window.location.hostname === "localhost" 
+    ? "http://localhost:5500" 
+    : "https://technomart.onrender.com";
+
 // ---------------------cart icon element count -----------------
 let cart_items_count = () => {
   let cart_icon_items = document.getElementById("cart_number");
@@ -22,7 +27,7 @@ let cart_items_count = () => {
 // Fetch cart items from backend
 const fetchCart = async () => {
   try {
-    const response = await fetch('http://localhost:5500/cart/');
+    const response = await fetch(`${API_BASE_URL}/cart/`);
     basket = await response.json();
     console.log('Fetched Basket:', basket); // Log fetched data
 
@@ -147,7 +152,7 @@ let update = async (Prod_ID) => {
   
   // Send updated cart item to backend
   try {
-    await fetch('http://localhost:5500/update-cart', {
+    await fetch(`${API_BASE_URL}/update-cart/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -172,7 +177,7 @@ let remove_from_cart = async (Prod_ID) => {
   console.log(`${Prod_ID} removed`);
 
   try {
-    await fetch('http://localhost:5500/remove-from-cart', {
+    await fetch(`${API_BASE_URL}/remove-from-cart`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -193,7 +198,7 @@ let clear_cart = async () => {
   basket = [];
   localStorage.setItem("data", JSON.stringify(basket));
   try {
-    await fetch('http://localhost:5500/clear-cart', {
+    await fetch(`${API_BASE_URL}/clear-cart`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
