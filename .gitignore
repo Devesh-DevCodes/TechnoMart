@@ -1,0 +1,27 @@
+# Ignore VS Code settings
+.vscode/
+
+# Ignore temporary and system-generated files
+temp.txt
+*.log
+.DS_Store
+Thumbs.db
+
+# Ignore Firebase and sensitive config files
+firebase_init.js
+
+# Ignore generated and cache files
+node_modules/
+dist/
+.cache/
+build/
+
+# Ignore backup or unwanted files
+trash/
+EduSphere Presentation.pdf
+google33f8f655d95a6409.html
+
+# Ignore database or data dump files
+*.sqlite
+*.db
+*.json
