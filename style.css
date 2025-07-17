@@ -419,7 +419,7 @@ body {
   width: 100%;
   color: #ffffff;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-top: 4%;
   
   padding: 1% 0;
@@ -433,6 +433,14 @@ body {
   }
   
 }
+
+#foot-span{
+  padding: 0 5px;
+}
+
+
+
+
 
 
 
