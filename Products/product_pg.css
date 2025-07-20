@@ -34,8 +34,8 @@
 
 #img_id img{
 
-    /* height: 230px; */
-    /* width: 190px; */
+    height: 230px; 
+    width: 290px;
     border-radius: 10px;
     box-shadow: 1px 1px 6px 1px #b0afaf;
     background-color: transparent;
